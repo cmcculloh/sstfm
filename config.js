@@ -41,11 +41,12 @@ config = {
     url: process.env.HEROKU_URL,
     mail: {
       transport: 'SMTP',
+      host: 'smtp.sendgrid.net',
       options: {
-        service: 'Mailgun',
+        service: 'SendGrid',
         auth: {
-          user: process.env.MAILGUN_SMTP_LOGIN,
-          pass: process.env.MAILGUN_SMTP_PASSWORD
+          user: process.env.SENDGRID_USERNAME,
+          pass: process.env.SENDGRID_PASSWORD
         }
       }
     },
