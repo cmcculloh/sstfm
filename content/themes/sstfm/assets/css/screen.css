@@ -259,6 +259,10 @@ p, ul, ol, dl {
     text-rendering: geometricPrecision;
 }
 
+.document_page p, .document_page ul, .document_page ol, .document_page dl {
+    margin: 0;
+}
+
 ol, ul {
     padding-left: 3rem;
 }
