@@ -15,17 +15,19 @@
     </nav>
 </header>
 
-<main class="content" role="main">
-    <article>
+<main class="content document-page" role="main">
+    <article class="{{post_class}}">
 
         <header class="post-header">
-            <h1 class="post-title">test</h1>
+            <h1 class="post-title">{{title}}</h1>
         </header>
 
         <section class="post-content">
-            test static content
+            {{content}}
         </section>
-
+        <div class="document-page---document" style="border: 0.0266667in solid #000000; padding: 15px; display: block">
+        <!-- document goes here -->
+        </div>
     </article>
 </main>
 {{/post}}

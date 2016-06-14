@@ -1,0 +1,53 @@
+{{!< default}}
+
+{{!-- This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+
+<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+</header>
+
+<main class="content document-page" role="main">
+    <article class="{{post_class}}">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+        <div class="document-page---document" style="border: 0.0266667in solid #000000; padding: 15px; display: block">
+        <p style="text-align: center;"><span style="font-weight: bold;">COMMITTEE PURPOSE AND GOALS</span></p>
+        <p style="text-align: center;"><span style="text-decoration: underline;"><span style="font-weight: bold;"><span style="font-size: 14pt;">Benevolence Committee</span></span></span></p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in;">
+        </p><p style="text-indent: -1.5in; margin-left: 1.5in;"><span style="font-weight: bold;">Type:</span><span> </span>The Benevolence Committee is a standing committee <span style="font-weight: bold;"> </span></p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in;">
+        </p><p style="text-indent: -1.5in; margin-left: 1.5in;"><span style="font-weight: bold;">Purpose:</span><span> </span>The purpose of the Benevolence Committee is to oversee charitable activities of the Parish</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in;">
+        </p><p style="text-indent: -1.5in; margin-left: 1.5in;"><span style="font-weight: bold;">Goals:</span><span> </span>The Benevolence Committee is directed to accomplish the following:</p>
+        <p style="text-indent: -2in; margin-left: 2in;">
+        </p><p style="text-indent: -2in; margin-left: 2in; padding-left: 30px;"><span> </span>1.<span> </span>Receive charity requests and distribute funds from the committee�s available funds.</p>
+        <p style="text-indent: -2in; margin-left: 2in; padding-left: 30px;"><span> </span>2.<span> </span>Identify charitable needs and distribute funds from the committee�s available funds.</p>
+        <p style="text-indent: -2in; margin-left: 2in; padding-left: 30px;"><span> </span>3.<span> </span>Maintain policies and procedures regarding charitable requests</p>
+        <p style="text-indent: -2in; margin-left: 2in; padding-left: 30px;"><span> </span>4.<span> </span>Function as the liaison with other charitable groups and organizations</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in;">
+        </p><p style="text-indent: -1.5in; margin-left: 1.5in;"><span style="font-weight: bold;">Accountability:</span> <span> </span>This committee is accountable to the Parish Council.</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in;">
+        </p><p style="text-indent: -1.5in; margin-left: 1.5in;"><span style="font-weight: bold;">Interaction:</span><span> </span>This committee is empowered to direct the following committees or directors:</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in; padding-left: 120px;">None</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in; padding-left: 90px;">This committee is subject to the following committees or directors:</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in; padding-left: 120px;">None</p>
+        <p>Approved by the Parish Council on _________________________________.<span> </span></p>
+        </div>
+    </article>
+</main>
+{{/post}}
