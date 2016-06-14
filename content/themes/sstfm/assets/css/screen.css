@@ -714,7 +714,7 @@ body.nav-opened .nav {
     font-size: 1.2rem;
     vertical-align: bottom;
     color: #B8B8B8;
-    content: counter(item, lower-roman);
+    /* content: counter(item, lower-roman); */
     counter-increment: item;
 }
 .nav li {
@@ -732,7 +732,7 @@ body.nav-opened .nav {
 }
 .nav li a:after {
     display: inline-block;
-    content: " .......................................................";
+    /* content: " ......................................................."; */
     color: rgba(255,255,255,0.2);
     margin-left: 5px;
 }
@@ -740,7 +740,7 @@ body.nav-opened .nav {
     color: #fff;
 }
 .nav .nav-current a:after {
-    content: " ";
+    /* content: " "; */
     border-bottom: rgba(255,255,255,0.5) 1px solid;
     width: 100%;
     height: 1px;
