@@ -259,7 +259,11 @@ p, ul, ol, dl {
     text-rendering: geometricPrecision;
 }
 
-.document_page p, .document_page ul, .document_page ol, .document_page dl {
+.document-page {
+    font-size: 12px;
+}
+
+.document-page p, .document-page ul, .document-page ol, .document-page dl {
     margin: 0;
 }
 
