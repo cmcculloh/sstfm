@@ -2,6 +2,11 @@
 
 Ghost is a free, open, simple blogging platform. Visit the project's website at <http://ghost.org>, or read the docs on <http://support.ghost.org>.
 
+## Testing locally
+
+```heroku local web-local```
+
+
 ## Deploying on Heroku
 
 To get your own Ghost blog running on Heroku, click the button below:
