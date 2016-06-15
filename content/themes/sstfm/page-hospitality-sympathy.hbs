@@ -1,0 +1,75 @@
+{{!< default}}
+
+{{!-- This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+
+<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+</header>
+
+<main class="content document-page" role="main">
+    <article class="{{post_class}}">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+        <div class="document-page---document" style="border: 0.0266667in solid #000000; padding: 15px; display: block">
+        <p style="text-align: center"><span style="font-weight: bold">COMMITTEE PURPOSE AND GOALS</span></p>
+        <p></p>
+        <p style="text-align: center"><span style="text-decoration: underline"><span style="font-weight: bold"><span style="font-size: 14pt">Hospitality &amp; Sympathy Committee</span></span></span></p>
+        <p></p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in">&nbsp;</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in"><span style="font-weight: bold">Type:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The Hospitality &amp; Sympathy Committee is a standing committee <span style="font-weight: bold"></span></p>
+        <p></p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in">&nbsp;</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in"><span style="font-weight: bold">Purpose:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The purpose of the Hospitality &amp; Sympathy Committee is to facilitate<br>
+        hospitality for events and guests of the Parish. The committee will also<br>
+        facilitate the expression of sympathy on behalf of the Parish in the event<br>
+        of the illness, injury or death occurring in our Parish Family and their<br>
+        families and friends as deemed appropriate by the committee or as<br>
+        requested by the Parish Council</p>
+        <p></p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in">&nbsp;</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in"><span style="font-weight: bold">Goals:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The Hospitality &amp; Sympathy Committee is directed to accomplish the<br>
+        following:</p>
+        <p style="text-indent: -2in; margin-left: 2in">&nbsp;</p>
+        <p style="text-indent: -2in; margin-left: 2in"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Organize meals for individuals or families as appropriate in the<br>
+        event of a birth, death, illness and/or injury</p>
+        <p style="text-indent: -2in; margin-left: 2in"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Organize meals and housing as necessary for visiting guests as<br>
+        appropriate</p>
+        <p style="text-indent: -2in; margin-left: 2in"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>3.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Arrange for the sending of flowers and cards and other expressions<br>
+        of sympathy as appropriate for the situation</p>
+        <p style="text-indent: -2in; margin-left: 2in"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>4.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Keep the Parish informed of needs which they may be able to help<br>
+        meet as appropriate in the event of a birth, death, illness and/or<br>
+        injury</p>
+        <p style="text-indent: -2in; margin-left: 2in"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Prepare a budget request annually for the Parish Council</p>
+        <p></p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in">&nbsp;</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in"><span style="font-weight: bold">Accountability:</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>This committee is accountable to the Parish Council.</p>
+        <p></p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in">&nbsp;</p>
+        <p style="text-indent: -1.5in; margin-left: 1.5in"><span style="font-weight: bold">Interaction:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>This committee is empowered to direct the following committees or<br>
+        directors:</p>
+        <p style="margin-left: 2in">&nbsp;</p>
+        <p style="margin-left: 2in">None</p>
+        <p style="margin-left: 1.5in">&nbsp;</p>
+        <p style="margin-left: 1.5in">This committee is subject to the following committees or directors:</p>
+        <p style="margin-left: 1.5in">&nbsp;</p>
+        <p style="margin-left: 1.5in">None</p>
+        <p>Approved by the Parish Council on _________________________________.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+        </div>
+    </article>
+</main>
+{{/post}}
