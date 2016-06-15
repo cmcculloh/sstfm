@@ -1,0 +1,546 @@
+{{!< default}}
+
+{{!-- This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+
+<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+</header>
+
+<main class="content document-page" role="main">
+    <article class="{{post_class}}">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+        <div class="document-page---document" style="border: 0.0266667in solid #000000; padding: 15px; display: block">
+        <p style="text-align: center;"><span style="font-size: 12pt;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"> </span></span></span><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 24pt;">By-Laws of</span></span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 24pt;">St. Stephen the First Martyr (OCA)</span></span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 15pt;">Crawfordsville, IN</span></span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 12pt;">Adopted September 7, 2003</span></span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 12pt;">Revised February 4, 2007</span></span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 12pt;">PREAMBLE</span></span><span style="font-size: 11pt;"><span>…………………………………………………………………………………………………………………………….</span> 3</span><span style="font-size: 12pt;"> </span></span></p>
+        <p style="text-indent: -0.875in; margin-left: 0.875in;">
+        </p><p style="text-align: justify; text-indent: -0.875in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;">ARTICLE I – THE PARISH MEMBERSHIP</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 1Voting Member<span>……………………………………………………………………………………………………..</span>4</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 2 Transfer Members</span><span style="font-size: 11pt;"><span>………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">4</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 3Multiple Parish Membership<span>……………………………………………………………………………………</span></span><span style="font-size: 11pt;">4</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 4Assessments<span>………………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">4</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 5Parish Membership Registration<span>………………………………………………………………………………</span></span><span style="font-size: 11pt;">4</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 6Exclusion of Voting Membership<span>…………………………………………………………………………….</span></span><span style="font-size: 11pt;">4</span></span></p>
+        <p style="text-indent: -1.125in; margin-left: 1.125in;">
+        </p><p style="text-align: justify; text-indent: -1.125in; margin-left: 1.125in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;">ARTICLE II<span> </span>–<span> </span>THE PARISH CLERGY</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 1Vacancy<span>………………………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">5</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 2Assignment<span>……………………………………………………………………………………………………………</span></span><span style="font-size: 11pt;">5</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 3Responsibility<span>………………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">5</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 4Compensation<span>………………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">5</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 5Additional Clergy<span>………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">6</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;"> </span></span><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;">ARTICLE III -THE PARISH MEETING</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 1Meetings<span>……………………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">7</span></span></p>
+        <p style="text-align: justify; line-height: 0.192501in; text-indent: -1in; margin-left: 1in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;"><span> </span>Section 2<span> </span>Quorum<span>………………………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">7</span></span></p>
+        <p style="text-align: justify; line-height: 0.192501in; text-indent: -1in; margin-left: 1in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;"><span> </span>Section 3<span> </span>Voting<span>…………………………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">7</span></span></p>
+        <p style="text-align: justify; line-height: 0.192501in; text-indent: -1in; margin-left: 1in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;"><span> </span>Section 4<span> </span>Order of Meetings<span>………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">8</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;">ARTICLE IV – THE PARISH COUNCIL</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 1Election<span>……………………………………………………………………………………………………………………</span></span><span style="font-size: 11pt;">9</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 2Term of Office<span>………………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">9</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 3Composition<span>…………………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">9</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 4Validation and Confirmation<span>………………………………………………………………………………………</span></span><span style="font-size: 11pt;">9</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 5Removal from Parish Council<span>…………………………………………………………………………………..</span></span><span style="font-size: 11pt;">10</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 6Vacancies in Parish Council<span>……………………………………………………………………………………..</span></span><span style="font-size: 11pt;">10</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 7Parish Council Meetings<span>………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">10</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 8Officers of the Parish Council<span>…………………………………………………………………………………..</span></span><span style="font-size: 11pt;">11</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 9Parish Administration<span>………………………………………………………………………………………………</span></span><span style="font-size: 11pt;">12</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;">ARTICLE V – <span> </span>THE PARISH PROPERTY</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 1Title of Ownership<span>………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">13</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 2Real Property<span>………………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">13</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 3Special Bequests<span>……………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">13</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 4Defection<span>……………………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">13</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 5Dissolution<span>…………………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">13</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;">ARTICLE VI – THE PARISH ORGANIZATIONS</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 1Organizations<span>…………………………………………………………………………………………………………</span></span><span style="font-size: 11pt;">14</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;">ARTICLE VII<span> </span> – THE PARISH DEPARTMENTS</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 1Parish Representation<span>………………………………………………………………………………………………</span></span><span style="font-size: 11pt;">15</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 2Election of Delegates<span>………………………………………………………………………………………………</span></span><span style="font-size: 11pt;">15</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;">ARTICLE VIII – THE AMENDMENTS, REGULATIONS &amp; GENERAL PROVISIONS</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 1Amendments<span>…………………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">16</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 2Procedures<span>……………………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">16</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 3Scope of Rights<span>………………………………………………………………………………………………………</span></span><span style="font-size: 11pt;">16</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 4Text<span>……………………………………………………………………………………………………………………….</span></span><span style="font-size: 11pt;">16</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 11pt;">Section 5Adoption<span>………………………………………………………………………………………………………………..</span></span><span style="font-size: 11pt;">16</span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">PREAMBLE</span></span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The St. Stephen The First Martyr Orthodox Church, located in Crawfordsville, Indiana is a�Parish in the autocephalous Orthodox Church in America, and incorporated as a religious (not-for profit) corporation in the State of Indiana<em>, </em>on July 10, 1992</span></span></p>
+        <p style="text-align: justify;">
+        </p><p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">As the local community of the Church, the Parish exists for the purpose of worshiping God�according to the Holy Scriptures and Tradition of the Holy Orthodox Church, to encourage union�with God among the members of the Parish, to provide religious education and charitable aid for�its members. and to defend and promote the Orthodox Faith in America.</span></span></p>
+        <p style="text-align: justify;">
+        </p><p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish is part of the Orthodox Church in America, and therefore, its organization and�administration are subject to the Statute of the Orthodox Church in America, adopted by the�Second All-American Council of October 19-21, 1971, and amended by subsequent All-American Councils, and to the decisions of the Diocesan Assemblies of the Diocese of the�Midwest.</span></span></p>
+        <p style="text-align: justify;">
+        </p><p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish is primarily a spiritual body recognized by the canons and traditions, disciplines and�regulations of the Orthodox Church in America. Its adoption of a civil corporate existence is�done to allow it recognition in the secular world. If a discrepancy exists between the civil�Certificate of Incorporation or civil Bylaws and ecclesiastical canons, traditions, disciplines,�regulations of the then current Statute of the Orthodox Church in America, such discrepancy�shalt be eliminated. Until the Certificate of Incorporation of the Bylaws actually may be�amended, the Parish meanwhile shall be bound to the canons, traditions, discipline, regulations�of the Statute of the Orthodox Church in America with the same force and effect as if the same�were fully recited therein. All other provisions of the Certificate of Incorporation or Bylaws not�in conflict shall remain in effect as written.</span></span></p>
+        <p style="text-align: justify;">
+        </p><p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish shall be regulated by the following Bylaws which are intended to express the spirit of�the Holy Orthodox Tradition, as interpreted by the Orthodox Church in America, on a practical�level in the life of the Parish as a whole, so that the Parish might fulfill its divinely appointed�mission in a peaceful and orderly way.</span></span></p>
+        <p style="text-align: justify;">
+        </p><p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><br>
+        </span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span style="font-weight: bold;"> </span></span></span><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">ARTICLE I – THE PARISH MEMBERSHIP</span></span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 1<span> </span>Voting Member</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">A voting member of the parish shall fulfill the following requirements,</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>a)<span> </span>be a Baptized and Chrismated Orthodox Christian, and</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>be at least 18 years of age, and</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>partake of the Sacraments of Private Confession and Communion in one�s home<br>
+        parish at least once a year, and</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>d)<span> </span>have been a member of the Parish for a prior consecutive 6 month period, and</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>e)<span> </span>regularly fulfill such financial obligations as may be established by the Parish.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 2 <span> </span>Transfer Members</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">A person who was a �voting member� in another Parish of the Orthodox Church in America<br>
+        and who has transferred into another Parish, in accordance with the authorized transfer form<br>
+        (Appendix A), shall have full �voting member� status.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 3<span> </span> Multiple Parish Membership</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Voting membership in two or more parishes of the Orthodox Church in America is not<br>
+        permitted.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 4<span> </span> Assessments</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Each year the Parish shalt remit to the Diocesan Treasurer its financial obligation to the<br>
+        Diocese and to the Orthodox Church in America as stipulated by the Diocesan Assemblies<br>
+        and the All-American Councils.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 5<span> </span> Parish Membership Registration</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish, through its Council and Secretary, is responsible for submitting annually the<br>
+        census and membership information to the office of the Diocesan Bishop, in accordance with<br>
+        the form as determined in current Diocesan Directives.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 6<span> </span> Exclusion of Voting Membership</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish Council together with the Rector shall, within its jurisdiction, initiate action to<br>
+        remove from voting membership that person who:</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>a)<span> </span>directly or indirectly defies the Dogma or Canons of the Orthodox Church; or</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>directly or indirectly obstructs those decisions rendered by the majority of the Parish<br>
+        or the Diocesan Bishop; or</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>directly or indirectly causes such disruption so as to affect adversely the spiritual life<br>
+        of the Parish.</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Action to remove rights of voting membership shall be referred to higher Diocesan authority<br>
+        in the manner set forth in the current Diocesan Directives.</span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">ARTICLE II – THE PARISH CLERGY</span></span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 1<span> </span> Vacancy</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Upon the death, retirement, or transfer of the Rector, the vacancy in office may be filled on a<br>
+        temporary basis by the Diocesan Bishop until the office is filled on a permanent basis.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 2<span> </span>Assignment</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Rector is assigned, transferred or removed by the Diocesan Bishop by virtue of the<br>
+        authority of his office and in accordance with the Canons, ecclesiastical procedure and the<br>
+        needs of the Parish and of the Diocese. The Rector cannot be removed or leave his<br>
+        assignment without the specific permission of the Diocesan Bishop. The Parish shall be<br>
+        responsible for the support and welfare of its Rector until such time as he is removed from<br>
+        his position by the Diocesan Bishop.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 3<span> </span>Responsibility</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Rector of the Parish shall:</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>a)<span> </span>serve the liturgical and sacramental needs according to the order of the Typikon of<br>
+        the Orthodox Church in America;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>instruct members of the Parish in the tenets of the Orthodox Faith and piety;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>implement and be responsible for the religious education of the Parish and stimulate<br>
+        church growth;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>d)<span> </span>strive to raise the level of spirituality and morality of the members of the Parish;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>e)<span> </span>preside at all Parish Meetings;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>f)<span> </span>keep the Parish records of baptisms, chrismations, receptions into the faith,<br>
+        marriages, and burials; issue copies of the same, and report the statistics annually to<br>
+        the Diocesan Bishop;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>g)<span> </span>report as may be required by law to civil authority marriages performed;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>h)<span> </span>be the intermediary between the Parish and the Dean and the Diocesan Bishop;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>i)<span> </span>keep the church seal;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>j)<span> </span>be responsible for the well being of the Parish;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>k)<span> </span>implement the decisions of the All-American Councils, of the Diocesan Assemblies,<br>
+        of the Diocesan Bishop, of the District Dean, of the Annual and Special Meetings of<br>
+        the Parish, and of the Parish Council;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>l)<span> </span>check and sign the Minutes of the Annual and Special Meetings of the Parish and of<br>
+        the Parish Council meetings;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>m)<span> </span>be responsible for the supervision of additional clergy who are appointed or assigned<br>
+        by the Diocesan Bishop;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>n)<span> </span>be <em>an ex officio </em>member of all Committees and of the Parish Council.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 4<span> </span>Compensation</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Rector must be compensated by the Parish, the amount and terms of such compensation<br>
+        shall be determined prior to the time of his assignment and upon mutual agreement of the<br>
+        parish and the Rector.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;"> </span></span></span><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 5<span> </span>Additional Clergy</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Additional clergy as appointed by the Diocesan Bishop shall assist the Rector. The<br>
+        provisions of Article II, Sections 1, 2 and 4, shall be applicable to them. In addition to the<br>
+        general pastoral duties, such additional clergy shall be responsible for those specific duties in<br>
+        the assignment in concurrence with the Rector and Parish Council as approved by the<br>
+        Diocesan Bishop.</span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;"> </span></span></span><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">ARTICLE III – THE PARISH MEETING</span></span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 1<span> </span>Meetings</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>a)<span> </span>Annual Meeting: An annual meeting of the voting members of the Parish shall be held on<br>
+        the 4<sup>th</sup> Sunday in the 1<sup>st</sup> month of every year (following the celebration of the Divine<br>
+        Liturgy) for the purpose of electing members of the Parish Council and for the<br>
+        transaction of such other business as may come before the Meeting. Should<br>
+        circumstances preclude having the annual Parish Meeting at its regularly appointed time,<br>
+        then an alternate date agreed upon by the Rector and the Parish Council can be selected.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>Special Meetings: Special Meetings of the voting members of the Parish may be called<br>
+        by the Rector, the Parish Council, the Diocesan Bishop or his designee, or by not less<br>
+        than 10% of the voting members of the Parish. When 10% of the members of the<br>
+        congregation shall call a Meeting, they shall file with the President of the Parish Council<br>
+        at least 3 weeks prior to the date of said Meeting a written request signed by them stating<br>
+        the object of such Meeting. Arrangements shall then be made for notice to be given as<br>
+        per subsection d) hereof.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>Place of Meeting: The Annual Meeting and any Special Parish Meeting shall be held on<br>
+        the Parish premises.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; line-height: 0.206251in; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>d)<span> </span>Notice of Meetings: Notice of the Annual and any Special Parish Meeting shall be given<br>
+        by the Rector from the ambo at the Divine Liturgy on three (3) consecutive Sundays prior<br>
+        to the Meeting and published in the Church bulletin (and written notice shall be mailed or<br>
+        otherwise delivered to all voting members not later than eight (8) days prior to the date of<br>
+        the Meeting). The agenda of any Meeting shall be included in the notice. In the case of<br>
+        Special Meetings, or when the Annual Meeting shall have as part of its agenda capital<br>
+        expenditures, the purchase, sale, mortgage, lease or encumbrance of real property of the<br>
+        Parish, or the amendment of these Bylaws, the notice shall specify the matter or matters<br>
+        to be acted upon at said Meeting.</span></span></p>
+        <p style="line-height: 0.178201in;">
+        </p><p style="text-align: justify; line-height: 0.233751in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 2<span> </span>Quorum</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The quorum for all Parish Meetings shall be 20% of voting members enrolled at the end of<br>
+        the calendar year preceding the date of the Meeting. In the absence of a quorum at the<br>
+        Annual Parish Meeting, that Meeting may be adjourned to a time determined by the majority<br>
+        of voting members present at that Meeting. (At the Adjourned Meeting those in attendance<br>
+        shall constitute a quorum at that Meeting.) These provisions for an Adjourned Meeting shall<br>
+        not apply either to any Special Meeting or to any subject matter at an Annual Meeting<br>
+        pertaining to the amendment of these Bylaws or the acquisition or alienation of Parish<br>
+        property or capital expenditures. In those instances the quorum requirements outlined in this<br>
+        Section must be applied.</span></span></p>
+        <p style="line-height: 0.178201in;">
+        </p><p style="text-align: justify; line-height: 0.233751in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 3<span> </span>Voting</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>a)<span> </span>A simple majority vote by those voting members shall determine the decision of any<br>
+        Parish Meeting except as provided in subparagraph b) below, and in Article V. Section 2,<br>
+        and in Article VIII, Section 1 concerning amendments to these Bylaws.</span></span></p>
+        <p style="line-height: 0.178201in;">
+        </p><p style="line-height: 0.178201in; text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; line-height: 0.206251in; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>A two-thirds (2/3) vote of the voting members present shall be required in connection<br>
+        with any capital expenditures, including the purchase, sale, mortgage or lease of Parish<br>
+        property, but in no event may such expenditure be made with the approval of less than<br>
+        51% of all voting members of the Parish</span></span></p>
+        <p style="line-height: 0.178201in;">
+        </p><p style="text-align: justify; line-height: 0.233751in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 4<span> </span>Order of Meetings</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 12pt;"><span> </span></span></span><span style="font-size: 12pt;">a)<span> </span>Officers of the Parish Meeting</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>1)<span> </span>The Rector is the Chairman and presiding officer at the Parish Meeting unless the<br>
+        Rector designates a substitute chairman.</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>2)<span> </span>A Secretary, who may be the Secretary of the Parish Council or a person elected at<br>
+        the Parish Meeting, shall record the Minutes of the Parish Meeting.</span></span></p>
+        <p style="line-height: 0.178201in; text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; line-height: 0.206251in; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>The Agenda of the Annual Meeting</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>1.)<span> </span>Opening Prayer</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>2.)<span> </span>Determination of a Quorum</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>3.)<span> </span>Minutes of Previous Meeting</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>4.)<span> </span>Reports</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>5.)<span> </span>Financial Statement and Auditor�s Report</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>6.)<span> </span>Adoption of Parish Budget</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>7.)<span> </span>Election of the Parish Council, Auditing Committee, and representatives (to the<br>
+        Diocesan Assembly and) to the All-American Council</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> 8.) </span>Unfinished Business</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>9.)<span> </span>New Business</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>10.) Adjournment</span></span></p>
+        <p style="text-align: justify; line-height: 0.206251in; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>11.) Closing Prayer</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>The Agenda of the Special Meeting</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>1)<span> </span>Opening Prayer</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>2)<span> </span>Determination of a Quorum</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>3)<span> </span>Statement of Purpose of Meeting</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>4)<span> </span>Resolutions</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>5)<span> </span>Adjournment</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>6)<span> </span>Closing Prayer</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>d)<span> </span>Record of a Parish Meeting</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Two copies of the Minutes of a Parish Meeting, Annual or Special, signed by the<br>
+        Secretary of the Meeting and the Rector, including financial data and attached reports, if<br>
+        any, shall be sent to the Diocesan Bishop with an additional copy to the District Dean<br>
+        within no more than twenty-one (21) days of such Meeting.</span></span></p>
+        <p style="text-align: justify; text-indent: -1in; margin-left: 1in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>1)<span> </span>In case of disagreement with one or several decisions of a Parish Meeting, a<br>
+        statement of dissent may be submitted in writing by the Rector, the Parish<br>
+        Council, or ten percent (10%) of the voting members present at a Parish Meeting,<br>
+        and attached to the Minutes.</span></span></p>
+        <p style="text-align: justify; text-indent: -1in; margin-left: 1in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>2)<span> </span>After review of the Parish Meeting Minutes the Diocesan Bishop shall approve or<br>
+        disapprove the decisions and resolutions, including elections, in those Minutes. If<br>
+        approved, those decisions and resolutions, including elections, shall become<br>
+        effective as of the date of approval by the Diocesan Bishop. If disapproved, those<br>
+        decisions and resolutions, including elections, shall be remanded back to the<br>
+        Parish for correction or amendment. No decisions or action of a Parish Meeting<br>
+        shall become effective until approved in writing by the Diocesan Bishop.</span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">ARTICLE IV – THE PARISH COUNCIL</span></span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 1<span> </span>Election</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span> </span><span style="font-size: 12pt;">a)<span> </span>The Parish Council shall function as the Board of Trustees and shall be composed of the<br>
+        Rector, <em>ex</em> <em>officio </em>with vote, and 6 elected members.<em><span style="font-weight: bold;"> </span></em></span></span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>The election of members of the Parish Council shall take place at the regular Parish<br>
+        Meeting on an annual basis.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>Eligibility of Elected Members</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Voting members of the Parish are eligible for election to the Parish Council with the<br>
+        following exceptions:</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>1)<span> </span>Any full-time employee of the Parish is not eligible to serve on the Parish Council.</span></span></p>
+        <p style="text-align: justify; text-indent: -0.75in; margin-left: 0.75in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>2)<span> </span>Effective beginning in 2010, only one member of an immediate family living within a<br>
+        household, including the Rector�s household, is eligible to serve at the same time as a<br>
+        member of the Parish Council.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 2<span> </span>Term of Office</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.25in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">a)<span> </span>The term of office for members of the Parish Council shall be one year.</span></span></p>
+        <p style="text-align: justify; text-indent: -0.25in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">b)<span> </span>The term of office of the elected officer<span style="text-decoration: underline;">s</span>, as defined in Section 8, shall be one year.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>Notwithstanding any provisions contained in this Section under a) and b), all officers and<br>
+        members of the Parish Council shall hold office until their successors are duly elected,<br>
+        and validated by the Rector.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>d)<span> </span>Effective beginning in 2008, no member of the Parish Council may serve more than 3<br>
+        consecutive years.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 3<span> </span>Composition</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>a)<span> </span>The officers of the Parish Council shall consist of at least the President, Vice-President,<br>
+        Secretary, and Treasurer. Additional officers may be elected if deemed necessary by the<br>
+        Parish Meeting.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>The Annual Parish Meeting shall elect Parish Council officers, and then the open balance<br>
+        of the members of the Parish Council to be elected at the meeting.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 4<span> </span>Validation and Confirmation</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.25in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 12pt;"> </span></span><span style="font-size: 12pt;">a)<span> </span>The Secretary of the Annual Parish Meeting shall attest by signature to the election of the<br>
+        Parish Council, and supply the data and list of officers and members of the Parish<br>
+        Council on the �Confirmation of Parish Council� form.</span></span></p>
+        <p style="text-align: justify; text-indent: -0.25in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">b)<span> </span>The Rector shall validate the �Confirmation of Parish Council� form by affixing the<br>
+        Parish Seal and his signature and shall forward the form to the Diocesan Bishop.</span></span></p>
+        <p style="text-align: justify; text-indent: -0.25in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">c)<span> </span>Upon validation of the election of the Parish Council by the Rector the Parish Council<br>
+        members begin their term of office. Incumbents shall hold office until the Rector<br>
+        validates the �Confirmation of Parish Council� form for the newly elected officers and/or<br>
+        members.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 5<span> </span>Removal from Parish Council</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.25in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">a)<span> </span>All Parish Council members must continue to fulfill the qualifications for membership in<br>
+        the Parish Council during their entire tenure of office. Failure to retain membership as<br>
+        described in Article I and Article IV, Section 1 d), will bring automatic dismissal from<br>
+        the Council.</span></span></p>
+        <p style="text-align: justify; text-indent: -0.25in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">b)<span> </span>All Parish Council members are expected to attend all Council Meetings during their<br>
+        tenure of office. The unexcused absence of any Council member for three (3) consecutive<br>
+        meetings will render him subject to dismissal by the Parish Council.</span></span></p>
+        <p style="text-align: justify; text-indent: -0.25in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">c)<span> </span>The Parish Council initiates all dismissal procedures. However, the Diocesan Bishop<br>
+        through the District Dean may intervene in cases in which a Council member becomes<br>
+        subject to dismissal for causes stated in a) or b) of this Section 5.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 6<span> </span>Vacancies in Parish Council</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Any vacancy which occurs shall be filled by the Parish Council by electing a successor<br>
+        therefor with confirmation by the Rector, for the remainder of the vacated term. [to be used<br>
+        with Article IV, Section 1 b]</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 7<span> </span>Parish Council Meetings</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 12pt;"><span> </span></span></span><span style="font-size: 12pt;">a)<span> </span>Day, Time and Place</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish Council shall establish regular times for its monthly meetings, to be held on<br>
+        the Parish premises.</span></span></p>
+        <p style="text-indent: -0.625in; margin-left: 0.625in;">
+        </p><p style="text-align: justify; text-indent: -0.625in; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b) Chairman</span></span></p>
+        <p>While the Rector is the head of the Parish, he does not have to be Chairman. A lay<br>
+        member of the Parish Council may be Chairman.</p>
+        <p style="text-indent: -0.625in; margin-left: 0.625in;">
+        </p><p style="text-align: justify; text-indent: -0.625in; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c) Agenda</span></span></p>
+        <p>The Parish Council shall conduct its business from a pre-established agenda.</p>
+        <p style="text-align: justify; text-indent: -0.625in; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">d) Quorum</span></span></p>
+        <p>A simple majority of the Parish Council shall constitute a quorum.</p>
+        <p style="margin-left: 0.25in;">
+        </p><p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">e) Voting</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">A majority vote of those members in attendance can decide issues brought before the<br>
+        Parish Council.</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">f) Implementation of Decisions</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">All decisions of the Council must be submitted to the Rector for confirmation before<br>
+        becoming effective.</span></span></p>
+        <p style="text-indent: -0.625in; margin-left: 0.625in;">
+        </p><p style="text-align: justify; text-indent: -0.625in; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">g) Minutes</span></span></p>
+        <p>The Minutes of the Parish Council meetings shall be signed by the Secretary and the<br>
+        Rector. The original of the Minutes is the property of the Parish and becomes part of<br>
+        the Parish Archives.</p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">h) Open Meetings</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Parish Council meetings are open for attendance to all members of the Parish. An open<br>
+        forum may be held, at which time a member of the Parish, recognized by the Chair,<br>
+        may speak on an issue. However, only members of the parish Council may make a<br>
+        formal resolution or vote on any issue.</span></span></p>
+        <p style="margin-left: 0.25in;">
+        </p><p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">i)Closed Meetings</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">At its discretion the Parish Council may hold a Closed Meeting, i.e. one that is<br>
+        restricted to Council members and accordingly noted in the Minutes.</span></span></p>
+        <p style="margin-left: 0.25in;">
+        </p><p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">In the event that a matter is brought before the agenda of the Parish Council, which in the<br>
+        opinion of the Rector is in violation of the Canon Law of the Orthodox Church, The Statute<br>
+        of the Orthodox Church in America, or the Diocesan Directives, including, but not limited to<br>
+        matters of</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">1)<span> </span>Doctrine, or</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">2)<span> </span>Canon Law, or</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">3)<span> </span>Liturgical practice, or</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">4)<span> </span>sacramental observance, or</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">5)<span> </span>ecclesiastical discipline,</span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">the Rector has the right to veto both discussion and vote on said matter within the Parish<br>
+        Council. Any appeals from this decision shall be handled as provided in Article IV, Section 9<br>
+        (c).</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 8<span> </span>Officers of the Parish Council</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">a)President</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The President shall:</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">1)be an ex <em>officio </em>member of all Standing Committees; and</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">2)represent the Council on all appropriate occasions.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>Vice-President</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Vice-President shall:</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">1)act in the place of the President during the latter�s absence;</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">2)automatically succeed to the office of President in the event of its vacancy and</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>3)<span> </span>perform such other duties as may be imposed by law, by the Articles of<br>
+        incorporation, or by these Bylaws, or as may be prescribed from time to time by the<br>
+        Parish Council.</span></span></p>
+        <p style="margin-left: 0.125in;">
+        </p><p style="text-align: justify; margin-left: 0.125in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">c)Secretary</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Secretary shall:</span></span></p>
+        <p style="text-align: justify; margin-left: 0.625in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">1)keep an accurate record of the transactions of all meetings of the Parish Council;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>2)<span> </span>be responsible for posting notice of all Meetings of the Parish and of the Parish<br>
+        Council;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>3)<span> </span>maintain a membership list of the Parish which shall contain the address and voting<br>
+        qualifications of each member, and shall record therein the fact and date of<br>
+        termination, if any, of the membership of any such member;</span></span></p>
+        <p style="text-indent: -0.375in; margin-left: 0.875in;">
+        </p><p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>4)<span> </span>submit to the Diocesan Bishop and the District Dean copies of all appropriate<br>
+        reports, lists and Minutes; and</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>5)<span> </span>perform such other duties as may be imposed by law, by the Articles of<br>
+        Incorporation, or by these Bylaws, or as may be prescribed from time to time by the<br>
+        Parish Council.</span></span></p>
+        <p style="margin-left: 0.25in;">
+        </p><p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">d)Treasurer</span></span></p>
+        <p style="text-align: justify; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Treasurer shall:</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>1)<span> </span>receive and safely keep all money and securities of the Parish and shall invest and<br>
+        disburse the same under the direction of the Parish Council;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>2)<span> </span>render a statement at the Annual Parish Meeting and at such other times as may be<br>
+        requested by the Parish Council. The annual statement shall be audited and<br>
+        certified;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>3)<span> </span>keep a complete account of the finances of the Parish which shall be and remain the<br>
+        property of the Parish and which shall be open for Inspection at any reasonable time<br>
+        by the Parish Council;</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>4)<span> </span>prepare all appropriate financial reports and statements which are to be submitted<br>
+        by the Secretary to the Diocesan Bishop and District Dean; and</span></span></p>
+        <p style="text-align: justify; text-indent: -0.375in; margin-left: 0.875in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>5)<span> </span>perform such other duties as may be imposed by law, by the Articles of<br>
+        Incorporation, or by these Bylaws, or as may from time to time be prescribed by the<br>
+        Parish Council.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 9<span> </span>Parish Administration</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>a)<span> </span>The Rector as head of the Parish, by virtue of the ecclesiastical authority vested in him,<br>
+        shall guide and oversee the total Parish program, and is ultimately responsible with the<br>
+        Parish Council to the Bishop for the life and activity of the Parish.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>Each Parish shall be administered by the Rector and the Parish Council cooperatively.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>If a problem should arise between a Rector and the Parish Council, the matter shall not be<br>
+        brought before the Parish at a Parish Meeting. The Rector or the Parish Council shall<br>
+        have the right to refer the matter to the District Dean according to the then current<br>
+        �Deanery Guideline�. However, in matters of appeal the decision of the Diocesan Bishop<br>
+        shall be deemed final.</span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">ARTICLE V – THE PARISH PROPERTY</span></span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 1<span> </span>Title of Ownership</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish or Parish corporation is the sole owner of all Parish property, assets, and funds,<br>
+        subject to the following Sections of this Article and the Statutes and provisions of the<br>
+        Orthodox Church in America.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 2<span> </span>Real Property</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish may purchase real property, or sell, mortgage, lease or otherwise encumber its<br>
+        real property upon approval of a two-thirds (2/3) majority vote of the voting members of the<br>
+        Parish in attendance at the Annual Parish Meeting or a Special Meeting convened for that<br>
+        purpose, at which a quorum is present, due notice having been given, on a resolution<br>
+        presented by the Parish Council and Rector, and subject to final approval of the Diocesan<br>
+        Bishop. However, in no event may such action be taken with the approval of less than 51%<br>
+        of all voting members of the Parish.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 3<span> </span>Special Bequests</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">As far as possible all special bequests, gifts and devises should be used by the Parish for the<br>
+        purpose for which they were made. In the event the purpose of such gift, devise, or bequest is<br>
+        not feasible or practical, as so determined by the Parish Council and Rector, an alternate use<br>
+        may be determined by the Parish Council and Rector upon consultation with the donor or the<br>
+        estate representative.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 4<span> </span>Defection</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The Parish is an integral part of the Orthodox Church in America, therefore in the event the<br>
+        Parish were to decide to withdraw from the jurisdiction of the Orthodox Church in America,<br>
+        the Orthodox Church in America shall be entitled to full title to all the Parish assets and<br>
+        property. In the event that a group in a Parish decides to withdraw from the jurisdiction of<br>
+        the Orthodox Church in America, that segment of the Parish which remains loyal to the<br>
+        jurisdiction of the Orthodox Church in America shall retain full title to all the Parish assets<br>
+        and property.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 5<span> </span>Dissolution</span></span></span></p>
+        <p style="text-align: justify; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 12pt;"> </span></span><span style="font-size: 12pt;">A Parish may be dissolved by the decision of the Parish Council subject to the ratification of<br>
+        the decision to dissolve by the Diocesan Bishop. Only the Diocesan Bishop shall have the<br>
+        power to declare the Parish dissolved. Upon the dissolution of a Parish, the sacred and<br>
+        untouchable items, such as the Holy Antimension, the Tabernacle and the Sacred Vessels,<br>
+        shall be delivered directly to the Diocesan Bishop. After all encumbrances have been<br>
+        satisfied, all the remaining property, whether real, personal or mixed, or the proceeds from<br>
+        the sale thereof, shall be distributed by the District Dean, subject to the approval of the<br>
+        Diocesan Bishop, to institutions or charities of the Orthodox Church in America, preferably<br>
+        within the state of incorporation, or within the local Deanery.</span></span></p>
+        <p style="text-align: center;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">ARTICLE VI – THE PARISH ORGANIZATIONS</span></span></span></p>
+        <p style="text-align: justify;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 1<span> </span>Organizations</span></span></span></p>
+        <p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-weight: bold;"><span style="font-size: 12pt;"><span> </span></span></span><span style="font-size: 12pt;">a)<span> </span>From time to time individually affiliated Parish Organizations may be established or<br>
+        recognized by the Parish for specific purposes deemed compatible with Parish life. Such<br>
+        Organizations shall have the approval of, and are accountable to the Parish Council and<br>
+        Rector. The Bylaws of such Organizations shall be consistent with these Bylaws, the<br>
+        regulations of the Parish, the directives of the Diocesan Bishop, and the Statute of the<br>
+        Orthodox Church in America. Such Organizations shall make an annual report of<br>
+        activities and accountability, and shall make an annual financial statement available to<br>
+        the Parish Council. This section shall not apply to any chapters of a nationally affiliated<br>
+        organization, unless that chapter so provides in its own Bylaws.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>In the event that any such Organization is dissolved, its assets shall be turned over to the<br>
+        Parish.</span></span></p>
+        <p style="text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>In the event that the Parish is dissolved, the Organizations which were subsidiaries of that<br>
+        Parish likewise shall be dissolved, with all of those Organizations� assets to be disposed<br>
+        pursuant to Article V, Section 5 of these Bylaws.</span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="line-height: 0.1746in;">
+        </p><p style="line-height: 0.1746in;">
+        </p><p style="text-align: center; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;"> </span></span></span><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">ARTICLE VII – THE PARISH DEPARTMENTS</span></span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="text-align: justify; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 1<span> </span>Parish Representation</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.202083in; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Each parish, through its Rector and Parish Council, shall assign persons to be representatives<br>
+        within the Parish for the Departments of the Deanery established by the Diocese.</span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="text-align: justify; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 2<span> </span>Election of Delegates</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.202083in; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">The election of Department delegates to the All-American Council and the Diocesan<br>
+        Assembly will be subject to the appropriate provisions of the Statute of the Orthodox Church<br>
+        in America.</span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="line-height: 0.1746in;">
+        </p><p style="line-height: 0.1746in;">
+        </p><p style="text-align: center; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">ARTICLE VIII – THE AMENDMENTS, REGULATIONS AND<br>
+        GENERAL PROVISIONS</span></span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="text-align: justify; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 1<span> </span>Amendments</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.202083in; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">These Parish Bylaws may be altered or amended by a two-thirds <span style="font-weight: bold;">(2/3) </span>majority vote of the<br>
+        voting members of the Parish in attendance at the Annual Parish Meeting at which a quorum<br>
+        is present or a Special Meeting convened for that purpose at which a quorum is present,<br>
+        provided that timely written notice is given to the membership specifying the proposed<br>
+        addition, change or amendment. All amendments, changes or additions so proposed shall not<br>
+        take effect unless approved by the Diocesan Bishop.</span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="text-align: justify; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 2<span> </span>Procedures</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.202083in; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">For matters not covered by these Bylaws the Parish may enact procedures and regulations to<br>
+        meet the need of a particular situation in the Parish. Such additional procedures and<br>
+        regulations <span style="font-weight: bold;">must be presented to the Diocesan Bishop for his approval before </span>they<br>
+        become effective.</span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="text-align: justify; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 3<span> </span>Scope of Rights</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.202083in; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">Notwithstanding any provisions contained herein or any<span style="font-weight: bold;"> </span>provisions that might be assumed<br>
+        from the civil law concerning not-for-profit or religious corporations, nothing in these<br>
+        Bylaws shall be deemed to have granted any individual parishioners or group of parishioners<br>
+        any rights, as members of the present corporation, that are in conflict with, or at variance<br>
+        with, or superior to those recognized in the Statute of the Orthodox Church In America.</span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="text-align: justify; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 4<span> </span>Text</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.202083in; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>a)<span> </span>For all purposes the English text of these Bylaws shall be deemed to be the official text.</span></span></p>
+        <p style="line-height: 0.1746in; text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; line-height: 0.202083in; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>b)<span> </span>In these Bylaws the word �Diocese� shall refer to the Diocese of the Midwest of the<br>
+        Orthodox Church In America, and the words �Diocesan Bishop� and �Diocesan<br>
+        Authority� shall refer to the Bishop of the Diocese of the Midwest and those persons or<br>
+        groups duly appointed by him for the governance of the Diocese, respectively.</span></span></p>
+        <p style="line-height: 0.1746in; text-indent: -0.5in; margin-left: 0.5in;">
+        </p><p style="text-align: justify; line-height: 0.202083in; text-indent: -0.5in; margin-left: 0.5in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;"><span> </span>c)<span> </span>In the appropriate context the singular use of a word may refer to the plural, and the<br>
+        masculine may refer to the feminine.</span></span></p>
+        <p style="line-height: 0.1746in;">
+        </p><p style="text-align: justify; line-height: 0.229028in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 15pt;"><span style="font-weight: bold;">Section 5<span> </span>Adoption</span></span></span></p>
+        <p style="text-align: justify; line-height: 0.202083in; margin-left: 0.25in;"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12pt;">These Bylaws were accepted at a Parish Meeting held on the 7<sup>th</sup> day of September, 2003, at<br>
+        which the appropriate quorum was present, the Parish members having been duly notified,<br>
+        and have become effective on the _______day of ______________, 2003, by the approval of<br>
+        the Diocesan Bishop. They revoke, supplant and replace any and all Parish Bylaws, whether<br>
+        corporate or not, previously in use.</span></span></p>
+        </div>
+    </article>
+</main>
+{{/post}}
