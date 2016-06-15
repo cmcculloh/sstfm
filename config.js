@@ -5,10 +5,7 @@ var path = require('path'),
     fileStorage,
     storage;
 
-var hbs = require('express-hbs');
-hbs.registerHelper('testhelper', function() {
-  console.log('in testhelper test');
-});
+
 
 if (!!process.env.S3_ACCESS_KEY_ID) {
   fileStorage = true
