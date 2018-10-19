@@ -6,3 +6,5 @@ content/logs/
 config.production.json
 content/data/ghost-local.db
 .env
+.DS_Store
+swaks
