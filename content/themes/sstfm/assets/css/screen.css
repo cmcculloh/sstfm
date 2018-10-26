@@ -597,6 +597,14 @@ body.nav-opened .site-wrapper {
     width: 80%;
 }
 
+#image_ribbon {
+
+}
+
+#image_ribbon img {
+    width: 150px;
+}
+
 .main-nav {
     position: relative;
     padding: 35px 40px;
