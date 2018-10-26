@@ -598,12 +598,19 @@ body.nav-opened .site-wrapper {
 }
 
 #image_ribbon {
-
+    display: flex;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    left: 0;
 }
 
 #image_ribbon img {
     width: 150px;
-    float: left;
+    left: initial;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
 
 .main-nav {
