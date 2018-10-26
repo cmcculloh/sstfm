@@ -603,6 +603,7 @@ body.nav-opened .site-wrapper {
 
 #image_ribbon img {
     width: 150px;
+    float: left;
 }
 
 .main-nav {
