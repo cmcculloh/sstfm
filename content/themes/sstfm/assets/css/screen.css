@@ -613,6 +613,10 @@ body.nav-opened .site-wrapper {
     margin: 0;
 }
 
+#image_ribbon img:first-child {
+    left: 74px;
+}
+
 .main-nav {
     position: relative;
     padding: 35px 40px;
