@@ -597,24 +597,35 @@ body.nav-opened .site-wrapper {
     width: 80%;
 }
 
+#image_large_wrapper {
+    height: 532px;
+    overflow: hidden;
+}
+
+#image_large {
+    max-width: 100%;
+    padding: 0;
+}
+
 #image_ribbon {
     display: flex;
     width: 100%;
-    height: 120px;
+    height: 112px;
     overflow: hidden;
     left: 0;
 }
 
 #image_ribbon img {
-    width: 150px;
-    left: initial;
+    left: 70px;
+    width: 142px;
     display: inline-block;
     padding: 0;
     margin: 0;
 }
 
-#image_ribbon img:first-child {
-    left: 74px;
+#image_ribbon img.selected {
+    border: 2px solid white;
+    border-width: 2px 1px 2px 2px;
 }
 
 .main-nav {

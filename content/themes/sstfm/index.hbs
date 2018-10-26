@@ -24,17 +24,36 @@
         <section class="post-content">
             <p>St. Stephen the First Martyr Orthodox Church is a growing community of Orthodox Christians. Most of us are converts to Orthodoxy. We make our journey in Christ together; in prayer, worship, and fellowship.</p>
 
-            <div id="image_large">
-                <img src="/content/images/parish_life/IMG_9749.jpg" />
+            <div id="image_large_wrapper">
+                <img id="image_large" src="/content/images/parish_life/IMG_9749.jpg" />
             </div>
             <div id="image_ribbon">
-                <img src="/content/images/parish_life/IMG_9749.jpg" />
+                <img class="selected" src="/content/images/parish_life/IMG_9749.jpg" />
                 <img src="/content/images/parish_life/IMG_2414.jpg" />
-                <img src="/content/images/parish_life/IMG_4188.jpg" />
+                
                 <img src="/content/images/parish_life/IMG_4245.jpg" />
                 <img src="/content/images/parish_life/IMG_9858.jpg" />
                 <img src="/content/images/parish_life/IMG_9500.jpg" />
+                <img src="/content/images/parish_life/IMG_4188.jpg" />
             </div>
+
+            <script>
+                var ribbon = document.getElementById('image_ribbon');
+                var ribbonImgs = ribbon.getElementsByTagName('img');
+                var largeImage = document.getElementById('image_large');
+                
+                for (var image = 0; image < ribbonImgs.length; image++) {
+                    ribbonImgs[image].addEventListener("click", function() {
+                        for (var i = 0; i < ribbonImgs.length; i++) {
+                            ribbonImgs[i].classList.remove('selected');
+                            ribbonImgs[i].style.left = this.getBoundingClientRect().left / 100;
+                        }
+                        this.classList.add('selected');
+                        largeImage.src=this.src;
+
+                    });
+                }
+            </script>
             
 
             <p>St. Stephen's holds services many times a week. Please consult <a href="https://docs.google.com/document/d/12RZq6anAhaEJgBqe99Ug-3Q1BGVqrEvtFQ5j9tsLC5M/edit?usp=sharing">The Witness</a> for the most up to date and accurate service schedule. Generally our services include:</p>
