@@ -597,8 +597,13 @@ body.nav-opened .site-wrapper {
     width: 80%;
 }
 
+image_large_wrapper_wrapper {
+    height: 660px;
+}
+
 #image_large_wrapper {
     overflow: hidden;
+    position: absolute;
 }
 
 #image_large {
@@ -623,8 +628,12 @@ body.nav-opened .site-wrapper {
 }
 
 @media (max-width:629px) {
-    #image_ribbon {
+    #image_ribbon, #explanatory_text {
         display: none;
+    }
+
+    #image_large_wrapper_wrapper {
+        height: 300px;
     }
 }
 
