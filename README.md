@@ -1,3 +1,31 @@
+# SSTFM Website
+
+This website runs on [Ghost](http://ghost.org).
+
+The theme lives in /content/themes/sstfm/.
+
+To work on the site:
+
+1. Fork this repo
+2. `cd` into the root directory of the repo
+3. Run `npm install`
+4. Run `npm start --watch content/themes/sstfm --ext hbs,js,css`
+5. Browse to [http://localhost:2368/](http://localhost:2368/)
+
+Any changes you make _should_ be viewable by refreshing the page without restarting the server.
+
+When you are ready, commit your changes and issue a pull request.
+
+To deploy the site, merge a PR into the master branch on [https://github.com/cormacmccarthy/sstfm](https://github.com/cormacmccarthy/sstfm). This will trigger a Heroku build/deploy to [https://sstfm-qa.herokuapp.com/](https://sstfm-qa.herokuapp.com/). If the changes look good, go into the heroku dashboard and promote stage to production.
+
+Access the admin area at [https://sstfm.herokuapp.com/ghost/](https://sstfm.herokuapp.com/ghost/).
+
+Most page contents however lives inside of the `.hbs` files themselves and must be edited in the actual code. This includes the homepage, which lives at `/content/themes/sstfm/index.hbs`.
+
+Fr. Joel owns the Google docs which are linked to and used for The Witness and the yearly Calendar.
+
+
+
 # [Ghost](https://github.com/TryGhost/Ghost) on [Heroku](http://heroku.com)
 
 Ghost is a free, open, simple blogging platform. Visit the project's website at <http://ghost.org>, or read the docs on <http://support.ghost.org>.
