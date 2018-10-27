@@ -615,6 +615,12 @@ body.nav-opened .site-wrapper {
     left: 0;
 }
 
+@media (max-width:629px) {
+    #image_ribbon {
+        display: none;
+    }
+}
+
 #image_ribbon img {
     left: 70px;
     width: 142px;
