@@ -24,23 +24,27 @@
         <section class="post-content">
             <p>St. Stephen the First Martyr Orthodox Church is a growing community of Orthodox Christians. Most of us are converts to Orthodoxy. We make our journey in Christ together; in prayer, worship, and fellowship.</p>
 
-            <div id="image_large_wrapper">
-                <img id="image_large" src="/content/images/parish_life/IMG_9749.jpg" />
+            <div style="height: 660px;">
+                <div id="image_large_wrapper" style="position: absolute;">
+                    <img id="image_large" src="/content/images/parish_life/IMG_9749.jpg" />
+                    <div id="explanatory_text">Fr. Joel Chrismates (annoints with Holy Oil) a baby</div>
+                    <div id="image_ribbon">
+                        <img alt="Fr. Joel Chrismates (annoints with Holy Oil) a baby" class="selected" src="/content/images/parish_life/IMG_9749.jpg" />
+                        <img alt="A child receives Holy Communion" src="/content/images/parish_life/IMG_2414.jpg" />
+                        <img alt="Presbytera Maria teaches Sunday School" src="/content/images/parish_life/IMG_4245.jpg" />
+                        <img alt="Veneration of icons on the Sunday of Orthodoxy" src="/content/images/parish_life/IMG_9858.jpg" />
+                        <img alt="A parishoner is laid to rest in the hope of the Ressurection" src="/content/images/parish_life/IMG_9500.jpg" />
+                    </div>
+                </div>
             </div>
-            <div id="image_ribbon">
-                <img class="selected" src="/content/images/parish_life/IMG_9749.jpg" />
-                <img src="/content/images/parish_life/IMG_2414.jpg" />
-                
-                <img src="/content/images/parish_life/IMG_4245.jpg" />
-                <img src="/content/images/parish_life/IMG_9858.jpg" />
-                <img src="/content/images/parish_life/IMG_9500.jpg" />
-                <img src="/content/images/parish_life/IMG_4188.jpg" />
-            </div>
+
+
 
             <script>
                 var ribbon = document.getElementById('image_ribbon');
                 var ribbonImgs = ribbon.getElementsByTagName('img');
                 var largeImage = document.getElementById('image_large');
+                var altText = document.getElementById('explanatory_text');
                 
                 for (var image = 0; image < ribbonImgs.length; image++) {
                     ribbonImgs[image].addEventListener("click", function() {
@@ -50,6 +54,7 @@
                         }
                         this.classList.add('selected');
                         largeImage.src=this.src;
+                        altText.innerText = this.alt;
 
                     });
                 }
