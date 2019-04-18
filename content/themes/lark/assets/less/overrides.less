@@ -1,0 +1,308 @@
+
+
+/* Big cover image on the home page */
+.main-header {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5rem;
+    text-align: center;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+
+    .inner {
+        width: 80%;
+    }
+}
+
+#image_large_wrapper {
+    overflow: hidden;
+    position: absolute;
+
+    &_wrapper {
+        height: 660px;
+    }
+}
+
+#image_large {
+    max-width: 100%;
+    padding: 0;
+}
+
+#image_ribbon {
+    display: flex;
+    width: 100%;
+    height: 112px;
+    overflow: hidden;
+    left: 0;
+    margin-bottom: 15px;
+
+    img {
+        left: 70px;
+        width: 142px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        &:hover {
+            border: 1px solid white;
+            border-width: 1px 0px 1px 1px;
+        }
+
+        &.selected {
+            border: 2px solid white;
+            border-width: 2px 1px 2px 2px;
+        }
+    }
+}
+
+#explanatory_text {
+    position: absolute;
+    bottom: 135px;
+    background: white;
+    padding: 0 10px;
+}
+
+@media (max-width:800px) {
+    #image_ribbon, #explanatory_text {
+        display: none;
+    }
+
+    #image_large_wrapper_wrapper {
+        height: 500px;
+    }
+}
+
+@media (max-width:700px) {
+    #image_large_wrapper_wrapper {
+        height: 420px;
+    }
+}
+
+@media (max-width:600px) {
+    #image_large_wrapper_wrapper {
+        height: 360px;
+    }
+}
+
+@media (max-width:500px) {
+    #image_large_wrapper_wrapper {
+        height: 350px;
+    }
+}
+
+@media (max-width:400px) {
+    #image_large_wrapper_wrapper {
+        height: 270px;
+    }
+}
+
+.page-title {
+    margin: 10px 0 10px 0;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+.main-header-content.inner {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: 0 auto;
+}
+
+.vertical {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.page-description {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    color: rgba(255,255,255,0.8);
+}
+
+/* Add subtle load-in animation for content on the home page */
+.home-template {
+    .page-title {
+        -webkit-animation: fade-in-down 0.6s;
+        animation: fade-in-down 0.6s;
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+        text-shadow: 1px 1px 2px #611311;
+    }
+    .page-description {
+        -webkit-animation: fade-in-down 0.9s;
+        animation: fade-in-down 0.9s;
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+        text-shadow: 1px 1px 2px #611311;
+    }
+}
+
+/* ==========================================================================
+   1. Icons - Sets up the icon font and respective classes
+   ========================================================================== */
+
+/* Import the font file with the icons in it */
+@font-face {
+    font-family: "casper-icons";
+    src:url("../fonts/casper-icons.eot?v=1");
+    src:url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"),
+        url("../fonts/casper-icons.woff?v=1") format("woff"),
+        url("../fonts/casper-icons.ttf?v=1") format("truetype"),
+        url("../fonts/casper-icons.svg?v=1#icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply these base styles to all icons */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "casper-icons", "Open Sans", sans-serif;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Each icon is created by inserting the correct character into the
+   content of the :before pseudo element. Like a boss. */
+.icon-ghost:before {
+    content: "\f600";
+}
+.icon-feed:before {
+    content: "\f601";
+}
+.icon-twitter:before {
+    content: "\f602";
+    font-size: 1.1em;
+}
+.icon-google-plus:before {
+    content: "\f603";
+}
+.icon-facebook:before {
+    content: "\f604";
+}
+.icon-arrow-left:before {
+    content: "\f605";
+}
+.icon-stats:before {
+    content: "\f606";
+}
+.icon-location:before {
+    content: "\f607";
+    margin-left: -3px; /* Tracking fix */
+}
+.icon-link:before {
+    content: "\f608";
+}
+.icon-menu:before {
+    content: "\f609";
+}
+
+/* Create a bouncing scroll-down arrow on homepage with cover image */
+.scroll-down {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -16px;
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-animation: bounce 4s 2s infinite;
+    animation: bounce 4s 2s infinite;
+}
+
+/* Stop it bouncing and increase contrast when hovered */
+.scroll-down:hover {
+    color: #fff;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+    display: none;
+}
+
+/* ==========================================================================
+   13. Animations
+   ========================================================================== */
+
+/* Used to fade in title/desc on the home page */
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* Used to bounce .scroll-down on home page */
+@-webkit-keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
+}
+@keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
+}
