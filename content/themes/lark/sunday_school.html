@@ -10,12 +10,15 @@ dt {
 	text-transform: capitalize;
 }
 
+.slds-truncate .reading {
+	max-height: 100px;
+}
+
 .reading {
 	white-space: pre-wrap;
 	overflow: scroll;
 	display: flex;
 	flex-wrap: wrap;
-	max-height: 100px;
 }
 
 .reading dt {
@@ -41,6 +44,7 @@ dt {
 	<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Modal Header</h2>
 	</header>
 	<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+		<div id="lessonDetails"></div>
 	<form id="editForm" class="slds-col slds-size_5-of-6 slds-p-around_x-large"></form>
 	<textarea rows=20 id="json" class="slds-col slds-size_1-of-1 slds-hide slds-m-vertical_large"></textarea>
 	</div>
@@ -169,6 +173,7 @@ if (params.get('edit')) {
 	const target = lessons[params.get('edit')];
 
 	document.querySelector('#editForm').innerHTML = renderForm(target);
+	document.querySelector('#modal-heading-01').innerHTML = target.date;
 
 	attachFormEvents(params.get('edit'));
 }
@@ -180,10 +185,56 @@ const initiateEdit = (i) => {
 	window.history.pushState({path:newurl},'',newurl);
 
 	document.querySelector('#editForm').innerHTML = renderForm(target);
+	document.querySelector('#modal-heading-01').innerHTML = target.date;
 	document.querySelector('form').classList.remove('slds-hide');
 
 	document.querySelector('#editModal').classList.remove('slds-hide');
 	document.querySelector('#json').classList.add('slds-hide');
+	document.querySelector('#lessonDetails').classList.add('slds-hide');
+
+	attachFormEvents(i);
+}
+
+const renderLessonDetails = (lesson, i)  => `
+<dl class="slds-list_horizontal slds-wrap">
+	<dt class="slds-item_label slds-text-color_weak">Big Idea:</dt>
+	<dd class="slds-item_detail">${lesson.big_idea}</dd>
+	<dt class="slds-item_label slds-text-color_weak">scripture:</dt>
+	<dd class="slds-item_detail"><a target="_blank" href="${lesson.scripture_link || 'https://www.oca.org/readings/daily/'+moment(lesson.date).format('YYYY/MM/DD')}">${lesson.scripture || 'link'}</a></dd>
+	${lesson.summary ? `<dt class="slds-item_label slds-text-color_weak">summary:</dt>
+	<dd class="slds-item_detail">${lesson.summary}</dd>` : ""}
+	${lesson.scripture_text ? `<dt class="slds-item_label slds-text-color_weak">scripture text:</dt>
+	<dd class="slds-item_detail">${lesson.scripture_text}</dd>` : ""}
+	<dt class="slds-item_label slds-text-color_weak">story format:</dt>
+	<dd class="slds-item_detail"><a href="${lesson.story_link}">${lesson.story_format || "Puppet Show"}</a></dd>
+	${lesson.songs ? `<dt class="slds-item_label slds-text-color_weak">songs:</dt>
+	<dd class="slds-item_detail">${lesson.songs.reduce((songs, song) => `${songs}, ${song}`, '')}</dd>` : ""}
+	${lesson.game ? `<dt class="slds-item_label slds-text-color_weak">game:</dt>
+	<dd class="slds-item_detail">${lesson.game}</dd>` : ""}
+	${lesson.memorization ? `<dt class="slds-item_label slds-text-color_weak">memorization:</dt>
+	<dd class="slds-item_detail"><a href="https://www.biblegateway.com/passage/?search=${lesson.memorization}&version=NKJV">${lesson.memorization}</a></dd>` : ""}
+	${lesson.vocabulary ? `<dt class="slds-item_label slds-text-color_weak">vocabulary:</dt>
+	<dd class="slds-item_detail">${lesson.vocabulary}</dd>` : ""}
+	${lesson.liturgy_highlight ? `<dt class="slds-item_label slds-text-color_weak">liturgy highlight:</dt>
+	<dd class="slds-item_detail">${lesson.liturgy_highlight}</dd>` : ""}
+	${lesson.coloring_page_link ? `<dt class="slds-item_label slds-text-color_weak">Coloring Page</dt>
+	<dd style="text-transform: capitalize" class="slds-item_detail"><a target="_blank" href="${lesson.coloring_page_link}">${lesson.coloring_page.toLowerCase() || "Coloring Page"}</a></dd>` : ""}
+</dl>
+`;
+
+const showLessonDetails = (i)  => {
+	const target = lessons[i];
+
+	const newurl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?print=${i}`;
+	window.history.pushState({path:newurl},'',newurl);
+
+	document.querySelector('#lessonDetails').innerHTML = renderLessonDetails(target, i);
+	document.querySelector('#modal-heading-01').innerHTML = target.date;
+	document.querySelector('form').classList.add('slds-hide');
+
+	document.querySelector('#editModal').classList.remove('slds-hide');
+	document.querySelector('#json').classList.add('slds-hide');
+	document.querySelector('#lessonDetails').classList.remove('slds-hide');
 
 	attachFormEvents(i);
 }
@@ -192,7 +243,7 @@ const renderLesson = (lesson, i) => `
 			<article class="slds-item slds-tile slds-hint-parent slds-tile_board" style="background: white">
 				<div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
 					<h3 class="slds-tile__title slds-truncate slds-text-heading_medium" title="${lesson.date}">
-						<a href="javascript:void(0);" onclick="initiateEdit(${i})">${lesson.date}</a>
+						<a href="javascript:void(0);" onclick="showLessonDetails(${i})">${lesson.date}</a>
 					</h3>
 					<div class="slds-shrink-none">
 						<div class="slds-dropdown-trigger slds-dropdown-trigger_click">
@@ -228,7 +279,7 @@ const renderLesson = (lesson, i) => `
 						${lesson.scripture_text ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">scripture text:</dt>
 						<dd class="slds-item_detail slds-truncate">${lesson.scripture_text}</dd>` : ""}
 						<dt class="slds-item_label slds-text-color_weak slds-truncate">story format:</dt>
-						<dd class="slds-item_detail slds-truncate">${lesson.story_format || "Puppet Show"}</dd>
+						<dd class="slds-item_detail slds-truncate"><a href="${lesson.story_link}">${lesson.story_format || "Puppet Show"}</a></dd>
 						${lesson.songs ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">songs:</dt>
 						<dd class="slds-item_detail slds-truncate">${lesson.songs.reduce((songs, song) => `${songs}, ${song}`, '')}</dd>` : ""}
 						${lesson.game ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">game:</dt>
