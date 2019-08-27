@@ -168,16 +168,6 @@ const attachFormEvents = (i) => {
 	document.querySelector('#close').classList.add('slds-hide');
 }
 
-const params = new URLSearchParams(document.location.search.substring(1));
-if (params.get('edit')) {
-	const target = lessons[params.get('edit')];
-
-	document.querySelector('#editForm').innerHTML = renderForm(target);
-	document.querySelector('#modal-heading-01').innerHTML = target.date;
-
-	attachFormEvents(params.get('edit'));
-}
-
 const initiateEdit = (i) => {
 	const target = lessons[i];
 
@@ -310,6 +300,17 @@ document.querySelectorAll('.slds-dropdown-trigger').forEach(el => el.addEventLis
 const showJSON = () => {
 	document.querySelector('#json').innerHTML = `const lessons = ` + js_beautify(JSON.stringify(lessons), { indent_size: 4, space_in_empty_paren: true });
 	document.querySelector('#json').classList.remove('slds-hide');
+}
+
+const params = new URLSearchParams(document.location.search.substring(1));
+if (params.get('edit')) {
+	const target = params.get('edit');
+
+	initiateEdit(target);
+} else if (params.get('print')) {
+	const target = params.get('print');
+
+	showLessonDetails(target);
 }
 </script>
 
