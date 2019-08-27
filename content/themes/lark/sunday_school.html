@@ -279,7 +279,7 @@ const renderLesson = (lesson, i) => `
 						${lesson.scripture_text ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">scripture text:</dt>
 						<dd class="slds-item_detail slds-truncate">${lesson.scripture_text}</dd>` : ""}
 						<dt class="slds-item_label slds-text-color_weak slds-truncate">story format:</dt>
-						<dd class="slds-item_detail slds-truncate"><a href="${lesson.story_link}">${lesson.story_format || "Puppet Show"}</a></dd>
+						<dd class="slds-item_detail slds-truncate"><a href="${lesson.story_link}">${lesson.story_format || "TBD"}</a></dd>
 						${lesson.songs ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">songs:</dt>
 						<dd class="slds-item_detail slds-truncate">${lesson.songs.reduce((songs, song) => `${songs}, ${song}`, '')}</dd>` : ""}
 						${lesson.game ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">game:</dt>
