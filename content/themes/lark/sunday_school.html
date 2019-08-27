@@ -158,16 +158,6 @@ const clearListeners = ()  => {
 
 
 
-const attachFormEvents = (i) => {
-	document.querySelector('#save').addEventListener('click', saveLesson);
-	document.querySelector('#save').classList.remove('slds-hide');
-
-	document.querySelector('#cancel').addEventListener('click', cancelEdit);
-	document.querySelector('#cancel').classList.remove('slds-hide');
-
-	document.querySelector('#close').classList.add('slds-hide');
-}
-
 const initiateEdit = (i) => {
 	const target = lessons[i];
 
@@ -182,7 +172,13 @@ const initiateEdit = (i) => {
 	document.querySelector('#json').classList.add('slds-hide');
 	document.querySelector('#lessonDetails').classList.add('slds-hide');
 
-	attachFormEvents(i);
+	document.querySelector('#save').addEventListener('click', saveLesson);
+	document.querySelector('#save').classList.remove('slds-hide');
+
+	document.querySelector('#cancel').addEventListener('click', cancelEdit);
+	document.querySelector('#cancel').classList.remove('slds-hide');
+
+	document.querySelector('#close').classList.add('slds-hide');
 }
 
 const renderLessonDetails = (lesson, i)  => `
@@ -226,7 +222,11 @@ const showLessonDetails = (i)  => {
 	document.querySelector('#json').classList.add('slds-hide');
 	document.querySelector('#lessonDetails').classList.remove('slds-hide');
 
-	attachFormEvents(i);
+	document.querySelector('#save').classList.add('slds-hide');
+	document.querySelector('#cancel').classList.add('slds-hide');
+
+	document.querySelector('#close').addEventListener('click', closeModal);
+	document.querySelector('#close').classList.remove('slds-hide');
 }
 
 const renderLesson = (lesson, i) => `
