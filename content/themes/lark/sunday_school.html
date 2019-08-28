@@ -28,47 +28,129 @@ dt {
 .reading dd {
 	width: 90%;
 }
+
+@media print {
+	#editModal, #lessonDetails, #lessonDetails .slds-text-heading_medium.slds-hide {
+		display: block !important;
+		visibility: visible !important;
+	}
+
+	.slds-modal__footer, .slds-modal__header, #editForm, #aside, #main {
+		display: none;
+		visibility: hidden;
+	}
+
+}
 </style>
 </head>
 <body>
 <div id="editModal" class="slds-hide" style="height:640px">
 	<section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
-	<div class="slds-modal__container">
-	<header class="slds-modal__header">
-	<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
-	<svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
-	<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
-	</svg>
-	<span class="slds-assistive-text">Close</span>
-	</button>
-	<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Modal Header</h2>
-	</header>
-	<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
-		<div id="lessonDetails"></div>
-	<form id="editForm" class="slds-col slds-size_5-of-6 slds-p-around_x-large"></form>
-	<textarea rows=20 id="json" class="slds-col slds-size_1-of-1 slds-hide slds-m-vertical_large"></textarea>
-	</div>
-	<footer class="slds-modal__footer">
-					<button id="cancel" class="slds-button">Cancel</button>
-					<button id="save" class="slds-button slds-button_brand">Save</button>
-					<button id="close" class="slds-button slds-button_neutral slds-hide">Close</button>
-	</footer>
-	</div>
+		<div class="slds-modal__container">
+			<header class="slds-modal__header">
+				<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+					<svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+					<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+					</svg>
+					<span class="slds-assistive-text">Close</span>
+				</button>
+				<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Modal Header</h2>
+			</header>
+			<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+				<div id="lessonDetails"></div>
+				<form id="editForm" class="slds-col slds-size_5-of-6 slds-p-around_x-large"></form>
+				<textarea rows=20 id="json" class="slds-col slds-size_1-of-1 slds-hide slds-m-vertical_large"></textarea>
+			</div>
+			<footer class="slds-modal__footer">
+							<button id="cancel" class="slds-button">Cancel</button>
+							<button id="save" class="slds-button slds-button_brand">Save</button>
+							<button id="close" class="slds-button slds-button_neutral slds-hide">Close</button>
+			</footer>
+		</div>
 	</section>
 	<div class="slds-backdrop slds-backdrop_open"></div>
 	</div>
 	<div class="slds-grid slds-wrap slds-p-around_large">
-		<h1 class="slds-text-heading_large">Church School Lessons</h1>
-		<ul class="slds-col slds-size_1-of-1">
-			<li><a href="http://ww1.antiochian.org/christianeducation/letusattendarchives">Let us attend</a></li>
-			<li><a href="https://www.oca.org/readings/daily/">OCA Scripture Readings</a></li>
-		</ul>
-		<ul id="lessonList" class="slds-col slds-size_1-of-1 slds-grid slds-wrap slds-gutters"></ul>
-
+		<div id="main" class="slds-col slds-size_4-of-5">
+			<h1 class="slds-col slds-size_1-of-1 slds-text-heading_large">Church School Lessons</h1>
+			<ul id="lessonList" class="slds-col slds-size_1-of-1 slds-grid slds-wrap slds-gutters"></ul>
+		</div>
+		<div id="aside" class="slds-col slds-size_1-of-5">
+			<div style="position: fixed" class="slds-grid slds-wrap">
+				<div class="slds-col slds-size_1-of-1">
+					<h2 class="slds-text-heading_medium">Link Library</h2>
+					<ul>
+						<li><a href="http://ww1.antiochian.org/christianeducation/letusattendarchives">Let us attend</a></li>
+						<li><a href="https://www.oca.org/readings/daily/">OCA Scripture Readings</a></li>
+					</ul>
+				</div>
+				<div class="slds-col slds-size_1-of-1 slds-m-top_medium">
+					<h2 class="slds-text-heading_medium">Song Links</h2>
+					<ul id="songList">
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 	<script src="./lessons.js"></script>
 <script>
+
+const songs  =  [
+	{
+		name: 'Numbers',
+		link: 'https://youtu.be/_Pgcm50M7ko'
+	},
+	{
+		name: 'Only a Boy Named David',
+		link: 'https://youtu.be/-tcMhEzbs2Q'
+	},
+	{
+		name: 'The Wise Man Built His House',
+		link: 'https://youtu.be/Eu5bBDRpzPM'
+	},
+	{
+		name: 'Zacchaeus Was a Wee Little Man',
+		link: 'https://youtu.be/yxe9jO0scgA'
+	},
+	{
+		name: 'He\'s Got The Whole World in His Hands',
+		link: 'https://youtu.be/oEkXzi19Crk'
+	},
+	{
+		name: 'Clap Your Hands',
+		link: 'https://youtu.be/C3c8fzbsfOE'
+	},
+	{
+		name: 'I\'ve Got The Joy, Joy, Joy',
+		link: 'https://youtu.be/NC-IVZOIHgQ'
+	},
+	{
+		name: 'Give Me Oil In My Lamp',
+		link: 'https://youtu.be/nBo9BM6QVxs'
+	},
+	{
+		name: 'Arky Arky Noah',
+		link: 'https://youtu.be/wMQjYJdtwoc'
+	},
+	{
+		name: 'Who Built the Ark',
+		link: 'https://youtu.be/QGNMW6WRvLs'
+	},
+	{
+		name: 'Jude\'s Blessing',
+		link: 'https://youtu.be/b9hwmu2Fq-U'
+	},
+	{
+		name: 'Father Abraham (had many sons)',
+		link: 'https://youtu.be/UbLvpd9bUL4'
+	}
+]
+const renderSongs = () => {
+	document.querySelector('#songList').innerHTML = songs.reduce((songList, song, i) => `${songList}\n<li><a href="${song.link}">${song.name}</a></li>`, '')
+}
+renderSongs();
+
 
 const renderForm = (target) => {
 	let formContents = `<div class="slds-form-element slds-form-element_horizontal">
@@ -81,13 +163,25 @@ const renderForm = (target) => {
 	for (var prop in target) {
 		formContents += `
 			<div class="slds-form-element slds-form-element_horizontal">
-				<label class="slds-form-element__label" style="text-align: right; display: inline-block; width: calc(33% - 1.25rem);" for="${prop}">${(prop === "scripture_link") ? `<a target="_blank" href="${target[prop] || 'https://www.oca.org/readings/daily/'+moment(target.date).format('YYYY/MM/DD')}">${prop}</a>` : (prop === "coloring_page_link") ? `<a target="_blank" href="${target[prop] || `http://ww1.antiochian.org/christianeducation/letusattendarchives##targetText=${target.scripture}`}">${prop}</a>` :prop}</label>
+				<label class="slds-form-element__label" style="text-align: right; display: inline-block; width: calc(33% - 1.25rem);" for="${prop}">${(prop === "scripture_link") ? `<a target="_blank" href="${target[prop] || 'https://www.oca.org/readings/daily/'+moment(target.date).format('YYYY/MM/DD')}">${prop}</a>` : (prop === "coloring_page_link") ? `<a target="_blank" href="${target[prop] || `http://ww1.antiochian.org/christianeducation/letusattendarchives##targetText=${target.scripture}`}">${prop}</a>` : (prop === "songs") ? `Songs<br>(hold down ctrl to select multiple)` : prop}</label>
 				<div class="slds-form-element__control">`;
 			if (prop === "scripture_text") {
 				formContents += `<textarea id="${prop}" placeholder="${prop}" class="slds-input">${target[prop]}</textarea>`;
+			} else if (prop === 'songs' || prop === "story_format") {
+				formContents += `
+				<select class="slds-select" id="${prop}" ${(prop === 'songs') ? `multiple="" style="height: calc(${songs.length} * 33px)"` : ''}>
+					${(prop === 'songs') ?
+						songs.reduce((songList, song) => `${songList}<option value="${song.name}" ${target[prop].includes(song.name) ? 'selected' : ''}>${song.name}</option>`, '') :
+						`<option value="Felt Board">Felt Board</option>
+						<option value="Flip-pad Drawing">Flip-pad Drawing</option>
+						<option value="Puppet Show">Puppet Show</option>
+						<option value="Reader Theater">Reader Theater (skit)</option>
+						<option value="Storybook">Storybook</option>`
+					}
+				</select>
+				`
 			} else {
-				formContents += `<input ${(prop === 'songs' || prop === "story_format") ? 'disabled ' : ''}type="text" id="${prop}" placeholder="${prop}" class="slds-input" value="${target[prop]}" />`;
-
+				formContents += `<input type="text" id="${prop}" placeholder="${prop}" class="slds-input" value="${target[prop]}" />`;
 			}
 		formContents += `</div></div>`;
 
@@ -122,10 +216,17 @@ const saveLesson = e => {
 
 	const inputs = document.querySelectorAll('form input');
 	const textareas = document.querySelectorAll('form textarea');
+	const selects = document.querySelectorAll('form select');
 
 	const newData = {};
 	inputs.forEach((input) => newData[input.id] = cleanText(input.value));
 	textareas.forEach((textarea) => newData[textarea.id] = cleanText(textarea.value));
+	selects.forEach(select => {
+		const selections = [];
+		select.querySelectorAll('option:checked').forEach(selection => selections.push(selection.value));
+		newData[select.id] = selections;
+	});
+
 	lessons[i] = newData;
 
 	document.querySelector(`#lesson${i}`).innerHTML = renderLesson(newData, i);
@@ -182,6 +283,7 @@ const initiateEdit = (i) => {
 }
 
 const renderLessonDetails = (lesson, i)  => `
+<h1 class="slds-text-heading_medium slds-m-bottom_large slds-hide">${lesson.date}</h1>
 <dl class="slds-list_horizontal slds-wrap">
 	<dt class="slds-item_label slds-text-color_weak">Big Idea:</dt>
 	<dd class="slds-item_detail">${lesson.big_idea}</dd>
@@ -194,7 +296,10 @@ const renderLessonDetails = (lesson, i)  => `
 	<dt class="slds-item_label slds-text-color_weak">story format:</dt>
 	<dd class="slds-item_detail"><a href="${lesson.story_link}">${lesson.story_format || "Puppet Show"}</a></dd>
 	${lesson.songs ? `<dt class="slds-item_label slds-text-color_weak">songs:</dt>
-	<dd class="slds-item_detail">${lesson.songs.reduce((songs, song) => `${songs}, ${song}`, '')}</dd>` : ""}
+	<dd class="slds-item_detail"><ul>${lesson.songs.reduce((songList, song, i) => {
+		const foundSong = songs.find((s) => s.name === song);
+		return `${songList}\n<li><a href="${foundSong.link}">${foundSong.name}</a></li>`
+	}, '')}</ul></dd>` : ""}
 	${lesson.game ? `<dt class="slds-item_label slds-text-color_weak">game:</dt>
 	<dd class="slds-item_detail">${lesson.game}</dd>` : ""}
 	${lesson.memorization ? `<dt class="slds-item_label slds-text-color_weak">memorization:</dt>
@@ -271,7 +376,10 @@ const renderLesson = (lesson, i) => `
 						<dt class="slds-item_label slds-text-color_weak slds-truncate">story format:</dt>
 						<dd class="slds-item_detail slds-truncate"><a href="${lesson.story_link}">${lesson.story_format || "TBD"}</a></dd>
 						${lesson.songs ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">songs:</dt>
-						<dd class="slds-item_detail slds-truncate">${lesson.songs.reduce((songs, song) => `${songs}, ${song}`, '')}</dd>` : ""}
+						<dd class="slds-item_detail slds-truncate"><ul>${lesson.songs.reduce((songList, song, i) => {
+							const foundSong = songs.find((s) => s.name === song);
+							return `${songList}\n<li><a href="${foundSong.link}">${foundSong.name}</a></li>`;
+						}, '')}</ul></dd>` : ""}
 						${lesson.game ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">game:</dt>
 						<dd class="slds-item_detail slds-truncate">${lesson.game}</dd>` : ""}
 						${lesson.memorization ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">memorization:</dt>
