@@ -40,7 +40,7 @@ const lessons = [{
     "game": "",
     "memorization": "John  1:1-3",
     "vocabulary": "Narthex (fellowship area), Nave (where people stand during church)",
-    "liturgy_highlight": "Christ  Among Us 15, 16, & 17",
+    "liturgy_highlight": "Christ  Among Us 15",
     "coloring_page": "WHAT IS MORE IMPORTANT THAN ANYTHING? ",
     "coloring_page_link": "http://ww1.antiochian.org/sites/default/files/2018-08-26-b.pdf",
     "scripture_text": "<dl class=\"reading\"><dt>33</dt><dd>Hear another parable: There was a certain landowner who planted a vineyard and set a hedge around it, dug a winepress in it and built a tower. And he leased it to vinedressers and went into a far country.</dd><dt>34</dt><dd>Now when vintage-time drew near, he sent his servants to the vinedressers, that they might receive its fruit.</dd><dt>35</dt><dd>And the vinedressers took his servants, beat one, killed one, and stoned another.</dd><dt>36</dt><dd>Again he sent other servants, more than the first, and they did likewise to them.</dd><dt>37</dt><dd>Then last of all he sent his son to them, saying, 'They will respect my son.'</dd><dt>38</dt><dd>But when the vinedressers saw the son, they said among themselves, 'This is the heir. Come, let us kill him and seize his inheritance.'</dd><dt>39</dt><dd>So they took him and cast him out of the vineyard and killed him.</dd><dt>40</dt><dd>Therefore, when the owner of the vineyard comes, what will he do to those vinedressers?\"</dd><dt>41</dt><dd>They said to Him, \"He will destroy those wicked men miserably, and lease his vineyard to other vinedressers who will render to him the fruits in their seasons.\"</dd><dt>42</dt><dd>Jesus said to them, \"Have you never read in the Scriptures: 'The stone which the builders rejected Has become the chief cornerstone. This was the LORD's doing, and it is marvelous in our eyes'? </dd></dl>",
@@ -48,20 +48,20 @@ const lessons = [{
     "songs": ["Only a Boy Named David", "Zacchaeus Was a Wee Little Man", "Give Me Oil In My Lamp"]
 }, {
     "date": "September 22, 2019",
-    "big_idea": "",
-    "summary": "",
+    "big_idea": "Jesus is worth following",
+    "summary": "Jesus told Peter to let down his nets. Peter said had been toiling on his own all night and hadn't caught a thing, but he obeyed and once again let down his net. He caught so much filled both his boat and another until they were sinking. If we are not following God, all that we do is worthless. When we are obeying and following and putting God at the center of our lives, we will bear much good fruit.",
     "scripture": "Luke 5:1-11",
     "scripture_link": "https://www.oca.org/readings/daily/2019/09/22/3",
-    "story_format": "",
     "story_link": "",
-    "songs": "",
     "game": "",
     "memorization": "John  1:1-4",
-    "vocabulary": "",
-    "liturgy_highlight": "",
+    "vocabulary": "Nave (where people stand during church), Solea - Icon Screen",
+    "liturgy_highlight": "16 & the top 2 paragraphs of 17",
     "coloring_page": "JESUS CALLS FISHERMEN ",
     "coloring_page_link": "http://www.antiochian.org/sites/default/files/2018-09-23-a.pdf",
-    "scripture_text": "<dl class=\"reading\"><dt>1</dt><dd>So it was, as the multitude pressed about Him to hear the word of God, that He stood by the Lake of Gennesaret,</dd><dt>2</dt><dd>and saw two boats standing by the lake; but the fishermen had gone from them and were washing their nets.</dd><dt>3</dt><dd>Then He got into one of the boats, which was Simon's, and asked him to put out a little from the land. And He sat down and taught the multitudes from the boat.</dd><dt>4</dt><dd>When He had stopped speaking, He said to Simon, \"Launch out into the deep and let down your nets for a catch.\"</dd><dt>5</dt><dd>But Simon answered and said to Him, \"Master, we have toiled all night and caught nothing; nevertheless at Your word I will let down the net.\"</dd><dt>6</dt><dd>And when they had done this, they caught a great number of fish, and their net was breaking.</dd><dt>7</dt><dd>So they signaled to their partners in the other boat to come and help them. And they came and filled both the boats, so that they began to sink.</dd><dt>8</dt><dd>When Simon Peter saw it, he fell down at Jesus' knees, saying, \"Depart from me, for I am a sinful man, O Lord!\"</dd><dt>9</dt><dd>For he and all who were with him were astonished at the catch of fish which they had taken;</dd><dt>10</dt><dd>and so also were James and John, the sons of Zebedee, who were partners with Simon. And Jesus said to Simon, \"Do not be afraid. From now on you will catch men.\"</dd><dt>11</dt><dd>So when they had brought their boats to land, they forsook all and followed Him.</dd></dl>"
+    "scripture_text": "<dl class=\"reading\"><dt>1</dt><dd>So it was, as the multitude pressed about Him to hear the word of God, that He stood by the Lake of Gennesaret,</dd><dt>2</dt><dd>and saw two boats standing by the lake; but the fishermen had gone from them and were washing their nets.</dd><dt>3</dt><dd>Then He got into one of the boats, which was Simon's, and asked him to put out a little from the land. And He sat down and taught the multitudes from the boat.</dd><dt>4</dt><dd>When He had stopped speaking, He said to Simon, \"Launch out into the deep and let down your nets for a catch.\"</dd><dt>5</dt><dd>But Simon answered and said to Him, \"Master, we have toiled all night and caught nothing; nevertheless at Your word I will let down the net.\"</dd><dt>6</dt><dd>And when they had done this, they caught a great number of fish, and their net was breaking.</dd><dt>7</dt><dd>So they signaled to their partners in the other boat to come and help them. And they came and filled both the boats, so that they began to sink.</dd><dt>8</dt><dd>When Simon Peter saw it, he fell down at Jesus' knees, saying, \"Depart from me, for I am a sinful man, O Lord!\"</dd><dt>9</dt><dd>For he and all who were with him were astonished at the catch of fish which they had taken;</dd><dt>10</dt><dd>and so also were James and John, the sons of Zebedee, who were partners with Simon. And Jesus said to Simon, \"Do not be afraid. From now on you will catch men.\"</dd><dt>11</dt><dd>So when they had brought their boats to land, they forsook all and followed Him.</dd></dl>",
+    "story_format": ["Felt Board"],
+    "songs": ["The Wise Man Built His House", "I've Got The Joy, Joy, Joy", "Arky Arky Noah"]
 }, {
     "date": "September 29, 2019",
     "big_idea": "",
