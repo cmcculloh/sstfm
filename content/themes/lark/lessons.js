@@ -16,20 +16,20 @@ const lessons = [{
     "songs": ["Numbers", "He's Got The Whole World in His Hands", "Father Abraham (had many sons)"]
 }, {
     "date": "September 8, 2019",
-    "big_idea": "",
-    "summary": "",
+    "big_idea": "We all need God",
+    "summary": "Jesus showed the man who thought he was perfect that even he had something standing between him and God",
     "scripture": "Matthew 19:16-26",
     "scripture_link": "http://oca.org/readings/daily/2019/09/08/8",
-    "story_format": "",
     "story_link": "",
-    "songs": "",
     "game": "",
     "memorization": "John 1:1-2",
-    "vocabulary": "",
-    "liturgy_highlight": "",
+    "vocabulary": "Liturgy - from Greek \"leitos\" which means \"people\" and \"ergos\" which means \"work\"",
+    "liturgy_highlight": "pages 11 & 13 of Christ Among Us",
     "coloring_page": "WHAT IS REALLY IMPORTANT?",
     "coloring_page_link": "http://ww1.antiochian.org/sites/default/files/2018-08-19-a.pdf",
-    "scripture_text": "<dl class=\"reading\"><dt>16</dt><dd>Now behold, one came and said to Him, \"Good Teacher, what good thing shall I do that I may have eternal life?\"</dd><dt>17</dt><dd>So He said to him, \"Why do you call Me good? No one is good but One, that is, God. But if you want to enter into life, keep the commandments.\"</dd><dt>18</dt><dd>He said to Him, \"Which ones?\" Jesus said, \"'You shall not murder,' 'You shall not commit adultery,' 'You shall not steal,' 'You shall not bear false witness,'</dd><dt>19</dt><dd>'Honor your father and your mother,' and, 'You shall love your neighbor as yourself.' \" </dd><dt>20</dt><dd>The young man said to Him, \"All these things I have kept from my youth. What do I still lack?\"</dd><dt>21</dt><dd>Jesus said to him, \"If you want to be perfect, go, sell what you have and give to the poor, and you will have treasure in heaven; and come, follow Me.\"</dd><dt>22</dt><dd>But when the young man heard that saying, he went away sorrowful, for he had great possessions.</dd><dt>23</dt><dd>Then Jesus said to His disciples, \"Assuredly, I say to you that it is hard for a rich man to enter the kingdom of heaven.</dd><dt>24</dt><dd>And again I say to you, it is easier for a camel to go through the eye of a needle than for a rich man to enter the kingdom of God.</dd><dt>25</dt><dd>When His disciples heard it, they were greatly astonished, saying, \"Who then can be saved?\"</dd><dt>26</dt><dd>But Jesus looked at them and said to them, \"With men this is impossible, but with God all things are possible.\"</dd></dl>"
+    "scripture_text": "<dl class=\"reading\"><dt>16</dt><dd>Now behold, one came and said to Him, \"Good Teacher, what good thing shall I do that I may have eternal life?\"</dd><dt>17</dt><dd>So He said to him, \"Why do you call Me good? No one is good but One, that is, God. But if you want to enter into life, keep the commandments.\"</dd><dt>18</dt><dd>He said to Him, \"Which ones?\" Jesus said, \"'You shall not murder,' 'You shall not commit adultery,' 'You shall not steal,' 'You shall not bear false witness,'</dd><dt>19</dt><dd>'Honor your father and your mother,' and, 'You shall love your neighbor as yourself.' \" </dd><dt>20</dt><dd>The young man said to Him, \"All these things I have kept from my youth. What do I still lack?\"</dd><dt>21</dt><dd>Jesus said to him, \"If you want to be perfect, go, sell what you have and give to the poor, and you will have treasure in heaven; and come, follow Me.\"</dd><dt>22</dt><dd>But when the young man heard that saying, he went away sorrowful, for he had great possessions.</dd><dt>23</dt><dd>Then Jesus said to His disciples, \"Assuredly, I say to you that it is hard for a rich man to enter the kingdom of heaven.</dd><dt>24</dt><dd>And again I say to you, it is easier for a camel to go through the eye of a needle than for a rich man to enter the kingdom of God.</dd><dt>25</dt><dd>When His disciples heard it, they were greatly astonished, saying, \"Who then can be saved?\"</dd><dt>26</dt><dd>But Jesus looked at them and said to them, \"With men this is impossible, but with God all things are possible.\"</dd></dl>",
+    "story_format": ["Reader Theater"],
+    "songs": ["The Wise Man Built His House", "I've Got The Joy, Joy, Joy", "Give Me Oil In My Lamp"]
 }, {
     "date": "September 15, 2019",
     "big_idea": "",
