@@ -32,20 +32,20 @@ const lessons = [{
     "songs": ["The Wise Man Built His House", "I've Got The Joy, Joy, Joy", "Give Me Oil In My Lamp"]
 }, {
     "date": "September 15, 2019",
-    "big_idea": "",
-    "summary": "",
+    "big_idea": "What are you doing with the fruits God has given you?",
+    "summary": "A landowner planted a vineyard and hired someone to care for it. When he sent to collect his fruits the landowner refused to give them and instead beat the collectors and killed the landowner's son. The landowner will take away the vineyard and give it to another. You are a vineyard God has planted. What good fruit are you yielding? How do you respond when he asks you to serve him with the fruit you are yielding?",
     "scripture": "Matthew 21:33-42",
     "scripture_link": "https://www.oca.org/readings/daily/2019/09/15/5",
-    "story_format": "",
     "story_link": "",
-    "songs": "",
     "game": "",
     "memorization": "John  1:1-3",
-    "vocabulary": "",
-    "liturgy_highlight": "",
+    "vocabulary": "Narthex (fellowship area), Nave (where people stand during church)",
+    "liturgy_highlight": "Christ  Among Us 15, 16, & 17",
     "coloring_page": "WHAT IS MORE IMPORTANT THAN ANYTHING? ",
     "coloring_page_link": "http://ww1.antiochian.org/sites/default/files/2018-08-26-b.pdf",
-    "scripture_text": "<dl class=\"reading\"><dt>33</dt><dd>Hear another parable: There was a certain landowner who planted a vineyard and set a hedge around it, dug a winepress in it and built a tower. And he leased it to vinedressers and went into a far country.</dd><dt>34</dt><dd>Now when vintage-time drew near, he sent his servants to the vinedressers, that they might receive its fruit.</dd><dt>35</dt><dd>And the vinedressers took his servants, beat one, killed one, and stoned another.</dd><dt>36</dt><dd>Again he sent other servants, more than the first, and they did likewise to them.</dd><dt>37</dt><dd>Then last of all he sent his son to them, saying, 'They will respect my son.'</dd><dt>38</dt><dd>But when the vinedressers saw the son, they said among themselves, 'This is the heir. Come, let us kill him and seize his inheritance.'</dd><dt>39</dt><dd>So they took him and cast him out of the vineyard and killed him.</dd><dt>40</dt><dd>Therefore, when the owner of the vineyard comes, what will he do to those vinedressers?\"</dd><dt>41</dt><dd>They said to Him, \"He will destroy those wicked men miserably, and lease his vineyard to other vinedressers who will render to him the fruits in their seasons.\"</dd><dt>42</dt><dd>Jesus said to them, \"Have you never read in the Scriptures: 'The stone which the builders rejected Has become the chief cornerstone. This was the LORD's doing, and it is marvelous in our eyes'? </dd></dl>"
+    "scripture_text": "<dl class=\"reading\"><dt>33</dt><dd>Hear another parable: There was a certain landowner who planted a vineyard and set a hedge around it, dug a winepress in it and built a tower. And he leased it to vinedressers and went into a far country.</dd><dt>34</dt><dd>Now when vintage-time drew near, he sent his servants to the vinedressers, that they might receive its fruit.</dd><dt>35</dt><dd>And the vinedressers took his servants, beat one, killed one, and stoned another.</dd><dt>36</dt><dd>Again he sent other servants, more than the first, and they did likewise to them.</dd><dt>37</dt><dd>Then last of all he sent his son to them, saying, 'They will respect my son.'</dd><dt>38</dt><dd>But when the vinedressers saw the son, they said among themselves, 'This is the heir. Come, let us kill him and seize his inheritance.'</dd><dt>39</dt><dd>So they took him and cast him out of the vineyard and killed him.</dd><dt>40</dt><dd>Therefore, when the owner of the vineyard comes, what will he do to those vinedressers?\"</dd><dt>41</dt><dd>They said to Him, \"He will destroy those wicked men miserably, and lease his vineyard to other vinedressers who will render to him the fruits in their seasons.\"</dd><dt>42</dt><dd>Jesus said to them, \"Have you never read in the Scriptures: 'The stone which the builders rejected Has become the chief cornerstone. This was the LORD's doing, and it is marvelous in our eyes'? </dd></dl>",
+    "story_format": ["Flip-pad Drawing"],
+    "songs": ["Only a Boy Named David", "Zacchaeus Was a Wee Little Man", "Give Me Oil In My Lamp"]
 }, {
     "date": "September 22, 2019",
     "big_idea": "",
