@@ -313,7 +313,7 @@ const renderLessonDetails = (lesson, i)  => `
 </dl>
 `;
 
-document.querySelectorAll('.slds-modal__close').addEventListener('click', closeModal);
+
 
 const showLessonDetails = (i)  => {
 	const target = lessons[i];
@@ -332,6 +332,7 @@ const showLessonDetails = (i)  => {
 	document.querySelector('#save').classList.add('slds-hide');
 	document.querySelector('#cancel').classList.add('slds-hide');
 
+	document.querySelector('.slds-modal__close').addEventListener('click', closeModal);
 	document.querySelector('#close').addEventListener('click', closeModal);
 	document.querySelector('#close').classList.remove('slds-hide');
 }
