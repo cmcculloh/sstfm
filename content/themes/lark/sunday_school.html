@@ -313,6 +313,8 @@ const renderLessonDetails = (lesson, i)  => `
 </dl>
 `;
 
+document.querySelectorAll('.slds-modal__close').addEventListener('click', closeModal);
+
 const showLessonDetails = (i)  => {
 	const target = lessons[i];
 
@@ -365,16 +367,16 @@ const renderLesson = (lesson, i) => `
 				</div>
 				<div class="slds-tile__detail">
 					<dl class="slds-list_horizontal slds-wrap">
-						<dt class="slds-item_label slds-text-color_weak slds-truncate">Big Idea:</dt>
-						<dd class="slds-item_detail slds-truncate">${lesson.big_idea}</dd>
+						<!--dt class="slds-item_label slds-text-color_weak slds-truncate">Big Idea:</dt>
+						<dd class="slds-item_detail slds-truncate">${lesson.big_idea}</dd-->
 						<dt class="slds-item_label slds-text-color_weak slds-truncate">scripture:</dt>
 						<dd class="slds-item_detail slds-truncate"><a target="_blank" href="${lesson.scripture_link || 'https://www.oca.org/readings/daily/'+moment(lesson.date).format('YYYY/MM/DD')}">${lesson.scripture || 'link'}</a></dd>
 						${lesson.summary ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">summary:</dt>
 						<dd class="slds-item_detail">${lesson.summary}</dd>` : ""}
 						${lesson.scripture_text ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">scripture text:</dt>
 						<dd class="slds-item_detail slds-truncate">${lesson.scripture_text}</dd>` : ""}
-						<dt class="slds-item_label slds-text-color_weak slds-truncate">story format:</dt>
-						<dd class="slds-item_detail slds-truncate"><a href="${lesson.story_link}">${lesson.story_format || "TBD"}</a></dd>
+						<!--dt class="slds-item_label slds-text-color_weak slds-truncate">story format:</dt>
+						<dd class="slds-item_detail slds-truncate"><a href="${lesson.story_link}">${lesson.story_format || "TBD"}</a></dd-->
 						${lesson.songs ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">songs:</dt>
 						<dd class="slds-item_detail slds-truncate"><ul>${lesson.songs.reduce((songList, song, i) => {
 							const foundSong = songs.find((s) => s.name === song);
@@ -382,12 +384,12 @@ const renderLesson = (lesson, i) => `
 						}, '')}</ul></dd>` : ""}
 						${lesson.game ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">game:</dt>
 						<dd class="slds-item_detail slds-truncate">${lesson.game}</dd>` : ""}
-						${lesson.memorization ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">memorization:</dt>
-						<dd class="slds-item_detail slds-truncate"><a href="https://www.biblegateway.com/passage/?search=${lesson.memorization}&version=NKJV">${lesson.memorization}</a></dd>` : ""}
+						${lesson.memorization ? `<!--dt class="slds-item_label slds-text-color_weak slds-truncate">memorization:</dt>
+						<dd class="slds-item_detail slds-truncate"><a href="https://www.biblegateway.com/passage/?search=${lesson.memorization}&version=NKJV">${lesson.memorization}</a></dd-->` : ""}
 						${lesson.vocabulary ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">vocabulary:</dt>
 						<dd class="slds-item_detail slds-truncate">${lesson.vocabulary}</dd>` : ""}
-						${lesson.liturgy_highlight ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">liturgy highlight:</dt>
-						<dd class="slds-item_detail slds-truncate">${lesson.liturgy_highlight}</dd>` : ""}
+						${lesson.liturgy_highlight ? `<!--dt class="slds-item_label slds-text-color_weak slds-truncate">liturgy highlight:</dt>
+						<dd class="slds-item_detail slds-truncate">${lesson.liturgy_highlight}</dd-->` : ""}
 						${lesson.coloring_page_link ? `<dt class="slds-item_label slds-text-color_weak slds-truncate">Coloring Page</dt>
 						<dd style="text-transform: capitalize" class="slds-item_detail slds-truncate"><a target="_blank" href="${lesson.coloring_page_link}">${lesson.coloring_page.toLowerCase() || "Coloring Page"}</a></dd>` : ""}
 					</dl>
