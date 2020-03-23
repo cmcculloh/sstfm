@@ -276,30 +276,45 @@ function initTopStories( $ ) {
 function initServices( $ ) {
 	'use strict';
 
-	var wrapper = $( '.widget-services' ).find( '.services' );
-	var results = [];
-	var index, response;
-	var output = '';
+	/*
 
-	for ( index in mondoOptions.services ) {
-		results.push( fetch( mondoOptions.services[ index ] ) );
-	}
+	Loads links from config.hbs, specified like this
+	'services': [
+		'/this-weeks-events/'
+	],
+	'footer': [
+		'/footer/'
+	],
 
-	$.when.apply( this, results ).done( function () {
-		for ( var i = 0; i < mondoOptions.services.length; i++ ) {
-			if ( mondoOptions.services.length == 1 ) {
-				response = $( arguments[0] );
-			} else {
-				response = $( arguments[ i ][0] );
-			}
-			output += '<li class="clearfix">';
-			output += '<div class="entry-content">';
-			output += '<div>' + response.find( '.entry-content' ).html() + '</div>';
-			output += '</div></li>';
+	 */
+	var posts = ['services', 'footer'];
+
+	posts.forEach(post => {
+		var wrapper = $( '.widget-' + post ).find( '.' + post );
+		var results = [];
+		var index, response;
+		var output = '';
+
+		for ( index in mondoOptions[post] ) {
+			results.push( fetch( mondoOptions[post][ index ] ) );
 		}
 
-		wrapper.html( output );
-	} );
+		$.when.apply( this, results ).done(function () {
+			for ( var i = 0; i < mondoOptions[post].length; i++ ) {
+				if ( mondoOptions[post].length == 1 ) {
+					response = $( arguments[0] );
+				} else {
+					response = $( arguments[ i ][0] );
+				}
+				output += '<li class="clearfix">';
+				output += '<div class="entry-content">';
+				output += '<div>' + response.find( '.entry-content' ).html() + '</div>';
+				output += '</div></li>';
+			}
+
+			wrapper.html( output );
+		});
+	});
 }
 
 function initFitVids( $ ) {
