@@ -282,12 +282,12 @@ function initServices( $ ) {
 	'services': [
 		'/this-weeks-events/'
 	],
-	'footer': [
-		'/footer/'
+	'footer-links': [
+		'/footer-links/'
 	],
 
 	 */
-	var posts = ['services', 'footer'];
+	var posts = ['services', 'footer-links'];
 
 	posts.forEach(post => {
 		var wrapper = $( '.widget-' + post ).find( '.' + post );
