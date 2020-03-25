@@ -287,7 +287,7 @@ function initServices( $ ) {
 	],
 
 	 */
-	var posts = ['services', 'footer-links'];
+	var posts = ['services', 'footer-links', 'other-links'];
 
 	posts.forEach(post => {
 		var wrapper = $( '.widget-' + post ).find( '.' + post );
