@@ -1,6 +1,6 @@
 {{#get "posts" limit="all" filter="featured:true"}}
-	{{#if featured}}
-		{{#foreach featured}}
+	{{#if posts}}
+		{{#foreach posts}}
 			<article class="post-list{{#unless feature_image}} no-image{{/unless}} {{post_class}}">
 				{{#if feature_image}}
 					{{^has tag="no-image"}}
