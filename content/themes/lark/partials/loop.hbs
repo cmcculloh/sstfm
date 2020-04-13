@@ -1,3 +1,4 @@
+{{#is "home"}}
 {{#get "posts" limit="all" filter="featured:true"}}
 	{{#if posts}}
 		{{#foreach posts}}
@@ -43,6 +44,7 @@
 		{{/foreach}}
 	{{/if}}
 {{/get}}
+{{/is}}
 
 
 {{#foreach posts}}
